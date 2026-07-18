@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Visor 3D del plano maestro de la Casa de Muñecas Modular" />
     <title>Casa de Muñecas Modular — Plano maestro 3D</title>
+    <script>if (window.location.protocol === "file:") document.documentElement.classList.add("local-file");</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -70,6 +71,13 @@
           <div id="object-tooltip" class="object-tooltip" hidden></div>
           <div id="loading" class="loading-card"><span class="loader"></span><p>Cargando plano maestro…</p></div>
           <div id="error" class="error-card" hidden></div>
+          <div class="local-file-help" role="alert">
+            <span class="warning-icon">!</span>
+            <h2>El navegador bloqueó el modelo 3D</h2>
+            <p>No abras <b>index.html</b> directamente. Volvé a esta carpeta y hacé doble clic en:</p>
+            <code>ABRIR-VISOR.cmd</code>
+            <small>El acceso inicia el visor local y abre automáticamente la página correcta.</small>
+          </div>
           <div class="scene-hint">Arrastrá para rotar · Rueda para acercar · Botón derecho para mover</div>
         </section>
 
@@ -116,4 +124,3 @@
     <script type="module" src="./app.js"></script>
   </body>
 </html>
-

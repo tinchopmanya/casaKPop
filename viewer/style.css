@@ -199,6 +199,28 @@ legend { width: 100%; margin-bottom: 10px; color: var(--muted); font-size: 10px;
 @keyframes spin { to { transform: rotate(360deg); } }
 .error-card { width: min(360px, 80%); color: #913f4d; font-size: 12px; line-height: 1.5; }
 
+.local-file-help { display: none; }
+.local-file .loading-card { display: none; }
+.local-file .local-file-help {
+  position: absolute;
+  z-index: 8;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: min(430px, calc(100% - 40px));
+  display: grid;
+  justify-items: center;
+  padding: 27px;
+  border: 1px solid #eddab6;
+  border-radius: 18px;
+  background: rgba(255, 253, 248, .97);
+  box-shadow: 0 22px 65px rgba(48, 34, 52, .18);
+  text-align: center;
+}
+.local-file-help h2 { margin: 12px 0 8px; font: 700 22px/1.15 "Playfair Display", serif; }
+.local-file-help p { margin: 0; color: #6f6472; font-size: 12px; line-height: 1.55; }
+.local-file-help code { margin: 17px 0 10px; padding: 10px 15px; border-radius: 9px; background: #efe8f4; color: var(--violet-dark); font: 700 13px/1 "DM Sans", sans-serif; }
+.local-file-help small { color: var(--muted); font-size: 10px; line-height: 1.45; }
+
 .object-tooltip { position: absolute; z-index: 4; max-width: 210px; padding: 7px 10px; border-radius: 8px; background: rgba(39,28,44,.88); color: white; font-size: 10px; pointer-events: none; transform: translate(12px, 12px); }
 
 .mini-plan { height: 76px; display: grid; grid-template-columns: 47fr 21fr 47fr; gap: 4px; padding: 8px; border-radius: 14px; background: #f2ece8; }
@@ -249,4 +271,3 @@ legend { width: 100%; margin-bottom: 10px; color: var(--muted); font-size: 10px;
   .scene-hint { display: none; }
   .scene-toolbar { width: max-content; top: 10px; }
 }
-

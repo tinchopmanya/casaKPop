@@ -25,6 +25,7 @@ El modelo 3D inicial representa esta organización sin rediseñarla. Las ampliac
 - Se registraron las dimensiones informadas y su contradicción aritmética.
 - Se creó el modelo 3D paramétrico inicial y el visor interactivo.
 - Se verificaron y archivaron capturas de la vista frontal en perspectiva y la vista superior tipo plano.
+- Se agregó un acceso de doble clic para Windows porque los navegadores bloquean `casa.json` cuando `index.html` se abre como archivo local.
 - Se registraron cuatro ideas futuras no invasivas.
 
 ## Ideas futuras

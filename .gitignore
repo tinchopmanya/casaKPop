@@ -4,4 +4,4 @@ outputs/
 Thumbs.db
 node_modules/
 *.log
-
+viewer/.viewer-server.json

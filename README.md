@@ -8,7 +8,13 @@ Este repositorio conserva el estado real de la construcción, las fotografías d
 
 El visor está publicado desde la carpeta `viewer/` y lee toda la geometría desde `model/casa.json`.
 
-Para abrirlo localmente, serví la raíz del repositorio con cualquier servidor web estático y abrí `viewer/`. No funciona correctamente abriendo `index.html` directamente porque el navegador bloquea la lectura local del JSON.
+Para abrirlo localmente en Windows:
+
+1. Entrá en la carpeta `viewer`.
+2. Hacé doble clic en `ABRIR-VISOR.cmd`.
+3. El navegador abrirá automáticamente el modelo 3D.
+
+Para detener el pequeño servidor local, hacé doble clic en `CERRAR-VISOR.cmd`. `index.html` no puede abrirse directamente porque el navegador bloquea la lectura local de `casa.json`.
 
 Controles disponibles:
 

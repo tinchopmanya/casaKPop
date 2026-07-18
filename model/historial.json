@@ -4,6 +4,22 @@
   "changes": [
     {
       "date": "2026-07-18",
+      "description": "Se corrigió la apertura local del visor agregando un iniciador de doble clic para Windows, un cierre controlado y un mensaje claro cuando index.html se abre mediante el protocolo file.",
+      "filesModified": [
+        ".gitignore",
+        "README.md",
+        "docs/proyecto.md",
+        "model/historial.json",
+        "viewer/index.html",
+        "viewer/style.css",
+        "viewer/ABRIR-VISOR.cmd",
+        "viewer/abrir-visor.ps1",
+        "viewer/CERRAR-VISOR.cmd",
+        "viewer/cerrar-visor.ps1"
+      ]
+    },
+    {
+      "date": "2026-07-18",
       "description": "Creación del plano maestro inicial a partir de dos fotografías de la construcción y una lámina de referencia. Se registró la contradicción dimensional, se creó la geometría 3D, el visor y la documentación viva.",
       "filesModified": [
         "README.md",
