@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": "Casa de Muñecas Modular",
+  "changes": [
+    {
+      "date": "2026-07-18",
+      "description": "Creación del plano maestro inicial a partir de dos fotografías de la construcción y una lámina de referencia. Se registró la contradicción dimensional, se creó la geometría 3D, el visor y la documentación viva.",
+      "filesModified": [
+        "README.md",
+        "docs/proyecto.md",
+        "docs/decisiones.md",
+        "docs/materiales.md",
+        "docs/medidas.md",
+        "docs/tareas.md",
+        "model/casa.json",
+        "model/historial.json",
+        "viewer/index.html",
+        "viewer/app.js",
+        "viewer/style.css",
+        "assets/photos/foto-001-frente.png",
+        "assets/photos/foto-002-superior.png",
+        "assets/renders/referencia-001-lamina.png",
+        "assets/renders/modelo-3d-frente.png",
+        "assets/renders/modelo-3d-superior.png",
+        "prompts/modelo-maestro.md"
+      ]
+    }
+  ]
+}

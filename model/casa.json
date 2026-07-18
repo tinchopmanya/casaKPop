@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Casa de Muñecas Modular",
+    "updatedAt": "2026-07-18",
+    "units": "cm",
+    "status": "levantamiento inicial provisional",
+    "principle": "Preservar y reutilizar la estructura artesanal existente antes de modificarla."
+  },
+  "coordinateSystem": {
+    "origin": "centro de la base, sobre su cara superior",
+    "x": "izquierda a derecha",
+    "y": "vertical",
+    "z": "frente a fondo",
+    "frontDirection": "+z"
+  },
+  "sources": [
+    {"id": "S-001", "path": "../assets/photos/foto-001-frente.png", "kind": "fotografia", "view": "frontal-perspectiva", "priority": "principal"},
+    {"id": "S-002", "path": "../assets/photos/foto-002-superior.png", "kind": "fotografia", "view": "superior-oblicua", "priority": "principal"},
+    {"id": "S-003", "path": "../assets/renders/referencia-001-lamina.png", "kind": "lamina-conceptual", "view": "compuesta", "priority": "secundaria"}
+  ],
+  "knownDimensions": [
+    {"id": "M-001", "target": "torre-izquierda", "axis": "y", "value": 113, "certainty": "informada-no-verificada", "source": ["S-003", "consigna"]},
+    {"id": "M-002", "target": "torre-izquierda", "axis": "x", "value": 60, "certainty": "informada-contradictoria", "source": ["S-003", "consigna"]},
+    {"id": "M-003", "target": "torre-izquierda", "axis": "z", "value": 38, "certainty": "informada-no-verificada", "source": ["S-003", "consigna"]},
+    {"id": "M-004", "target": "torre-derecha", "axis": "y", "value": 113, "certainty": "informada-no-verificada", "source": ["S-003", "consigna"]},
+    {"id": "M-005", "target": "torre-derecha", "axis": "x", "value": 60, "certainty": "informada-contradictoria", "source": ["S-003", "consigna"]},
+    {"id": "M-006", "target": "nucleo-central", "axis": "x", "value": 21, "certainty": "informada-no-verificada", "source": ["S-003", "consigna"]},
+    {"id": "M-007", "target": "base-mdf", "axis": "x", "value": 119, "certainty": "informada-contradictoria", "source": ["S-003", "consigna"]},
+    {"id": "M-008", "target": "base-mdf", "axis": "z", "value": 58, "certainty": "informada-no-verificada", "source": ["S-003"]},
+    {"id": "M-009", "target": "base-mdf", "axis": "y", "value": 1.5, "certainty": "informada-no-verificada", "source": ["S-003"]}
+  ],
+  "modelAssumptions": {
+    "layoutWidths": {"leftTower": 47, "core": 21, "rightTower": 47, "sideMargins": 2, "certainty": "estimada"},
+    "levels": [
+      {"id": "nivel-1", "minY": 0, "maxY": 37, "certainty": "estimada"},
+      {"id": "nivel-2", "minY": 37, "maxY": 74, "certainty": "estimada"},
+      {"id": "nivel-3", "minY": 74, "maxY": 113, "certainty": "estimada"}
+    ],
+    "wallThickness": {"value": 1, "certainty": "estimada-visual"},
+    "warning": "La suma de anchos informados es 141 cm y no coincide con la base de 119 cm. La implantacion visual no reemplaza la medicion fisica."
+  },
+  "materials": {
+    "mdf": {"label": "MDF base", "color": "#9a6944", "roughness": 0.88, "metalness": 0},
+    "cardboardNatural": {"label": "Carton natural", "color": "#9b6540", "roughness": 1, "metalness": 0},
+    "violet": {"label": "Carton pintado violeta", "color": "#7152aa", "roughness": 0.82, "metalness": 0},
+    "violetDark": {"label": "Interior violeta", "color": "#392163", "roughness": 0.9, "metalness": 0},
+    "blue": {"label": "Carton pintado azul", "color": "#247fc0", "roughness": 0.82, "metalness": 0},
+    "blueDark": {"label": "Interior azul", "color": "#123b6d", "roughness": 0.9, "metalness": 0},
+    "pink": {"label": "Carton pintado rosa", "color": "#ec72ba", "roughness": 0.8, "metalness": 0},
+    "red": {"label": "Detalle rojo", "color": "#c6283d", "roughness": 0.75, "metalness": 0},
+    "yellow": {"label": "Detalle amarillo", "color": "#f1c735", "roughness": 0.72, "metalness": 0},
+    "whiteFoam": {"label": "Espuma blanca", "color": "#f1efe8", "roughness": 0.95, "metalness": 0},
+    "grass": {"label": "Cesped decorativo", "color": "#2c6a45", "roughness": 1, "metalness": 0},
+    "transparent": {"label": "Lamina transparente", "color": "#bfe9f4", "roughness": 0.18, "metalness": 0, "opacity": 0.28},
+    "future": {"label": "Ampliacion futura", "color": "#ffb454", "roughness": 0.45, "metalness": 0.08, "opacity": 0.52},
+    "led": {"label": "LED calido", "color": "#fff0b0", "emissive": "#ffb21a", "emissiveIntensity": 2.2, "roughness": 0.25, "metalness": 0}
+  },
+  "components": [
+    {
+      "id": "base-mdf",
+      "kind": "base",
+      "status": "construido",
+      "dimensions": {"x": 119, "y": 1.5, "z": 58, "certainty": "informada-no-verificada"},
+      "material": "mdf"
+    },
+    {
+      "id": "torre-izquierda",
+      "kind": "caja-principal",
+      "status": "construido",
+      "appearance": "violeta con marcos rojos y amarillos",
+      "levels": ["nivel-1", "nivel-2", "nivel-3"],
+      "openings": [
+        {"id": "TI-N1-A", "level": "nivel-1", "kind": "vano-frontal", "bay": "izquierdo", "certainty": "observada"},
+        {"id": "TI-N1-B", "level": "nivel-1", "kind": "vano-frontal", "bay": "derecho", "certainty": "observada"},
+        {"id": "TI-N2-A", "level": "nivel-2", "kind": "vano-frontal", "bay": "izquierdo", "certainty": "observada"},
+        {"id": "TI-N2-B", "level": "nivel-2", "kind": "vano-frontal", "bay": "derecho", "certainty": "observada"},
+        {"id": "TI-N3-A", "level": "nivel-3", "kind": "ventana-frontal", "bay": "izquierdo", "certainty": "observada"},
+        {"id": "TI-N3-B", "level": "nivel-3", "kind": "ventana-frontal", "bay": "derecho", "certainty": "observada"}
+      ]
+    },
+    {
+      "id": "nucleo-central",
+      "kind": "conexion",
+      "status": "construido",
+      "appearance": "rosa con dos paneles transparentes y puentes",
+      "openings": [
+        {"id": "NC-N2", "level": "nivel-2", "kind": "panel-frontal", "certainty": "observada"},
+        {"id": "NC-N3", "level": "nivel-3", "kind": "panel-frontal", "certainty": "observada"}
+      ]
+    },
+    {
+      "id": "torre-derecha",
+      "kind": "caja-principal-abierta",
+      "status": "construido",
+      "appearance": "azul, frente abierto, borde violeta",
+      "levels": ["nivel-1", "nivel-2", "nivel-3"],
+      "openings": [
+        {"id": "TD-FRENTE", "level": "todos", "kind": "frente-abierto", "certainty": "observada"}
+      ]
+    }
+  ],
+  "elements": [
+    {"id": "base", "name": "Base MDF", "type": "box", "group": "structure", "level": "base", "status": "built", "position": [0, -0.75, 0], "size": [119, 1.5, 58], "material": "mdf"},
+
+    {"id": "li-back", "name": "Fondo torre izquierda", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [-34, 56.5, -18.5], "size": [47, 113, 1], "material": "violetDark"},
+    {"id": "li-side-l", "name": "Lateral izquierdo", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [-57, 56.5, 0], "size": [1, 113, 38], "material": "violet"},
+    {"id": "li-side-r", "name": "Lateral derecho", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [-11, 56.5, 0], "size": [1, 113, 38], "material": "violet"},
+    {"id": "li-roof", "name": "Cubierta violeta", "type": "box", "group": "structure", "level": "nivel-3", "status": "built", "position": [-34, 113, 0], "size": [47, 1.4, 38], "material": "violet"},
+    {"id": "li-floor-1", "name": "Piso izquierda nivel 1", "type": "box", "group": "structure", "level": "nivel-1", "status": "built", "position": [-34, 0.7, 0], "size": [47, 1.4, 38], "material": "violetDark"},
+    {"id": "li-floor-2", "name": "Piso izquierda nivel 2", "type": "box", "group": "structure", "level": "nivel-2", "status": "built", "position": [-34, 37, 0], "size": [47, 1.4, 38], "material": "violetDark"},
+    {"id": "li-floor-3", "name": "Piso izquierda nivel 3", "type": "box", "group": "structure", "level": "nivel-3", "status": "built", "position": [-34, 74, 0], "size": [47, 1.4, 38], "material": "violetDark"},
+    {"id": "li-mullion", "name": "Montante central fachada", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [-34, 55, 19.2], "size": [2.2, 108, 1.4], "material": "violet"},
+    {"id": "li-jamb-l", "name": "Jamba fachada izquierda", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [-56.2, 55, 19.2], "size": [1.6, 108, 1.4], "material": "violet"},
+    {"id": "li-jamb-r", "name": "Jamba fachada derecha", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [-11.8, 55, 19.2], "size": [1.6, 108, 1.4], "material": "violet"},
+    {"id": "li-transom-1", "name": "Travesano rojo inferior", "type": "box", "group": "structure", "level": "nivel-1", "status": "built", "position": [-34, 37, 20], "size": [44, 2.2, 1.2], "material": "red"},
+    {"id": "li-transom-2", "name": "Travesano rojo medio", "type": "box", "group": "structure", "level": "nivel-2", "status": "built", "position": [-34, 74, 20], "size": [44, 2.2, 1.2], "material": "red"},
+    {"id": "li-top-trim", "name": "Marco amarillo superior", "type": "box", "group": "structure", "level": "nivel-3", "status": "built", "position": [-34, 109.5, 20], "size": [43, 1.8, 1.2], "material": "yellow"},
+
+    {"id": "core-back", "name": "Fondo nucleo rosa", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [0, 56.5, -10], "size": [21, 113, 1], "material": "pink"},
+    {"id": "core-floor", "name": "Piso nucleo", "type": "box", "group": "structure", "level": "nivel-1", "status": "built", "position": [0, 0.8, 0], "size": [21, 1.6, 20], "material": "pink"},
+    {"id": "core-bridge-mid", "name": "Puente central medio", "type": "box", "group": "structure", "level": "nivel-2", "status": "built", "position": [0, 65, 0], "size": [21, 2, 18], "material": "pink"},
+    {"id": "core-bridge-top", "name": "Puente central superior", "type": "box", "group": "structure", "level": "nivel-3", "status": "built", "position": [0, 100, 0], "size": [21, 2, 18], "material": "pink"},
+    {"id": "core-panel-mid", "name": "Panel transparente medio", "type": "box", "group": "structure", "level": "nivel-2", "status": "built", "position": [0, 82.5, 10.2], "size": [14, 28, 0.6], "material": "transparent"},
+    {"id": "core-panel-top", "name": "Panel transparente superior", "type": "box", "group": "structure", "level": "nivel-3", "status": "built", "position": [0, 104, 10.2], "size": [14, 14, 0.6], "material": "transparent"},
+    {"id": "core-yellow-cap", "name": "Estructura superior amarilla", "type": "box", "group": "structure", "level": "nivel-3", "status": "built", "position": [0, 112, 9], "size": [21, 2, 3], "material": "yellow"},
+
+    {"id": "rd-back", "name": "Fondo torre derecha", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [34, 56.5, -18.5], "size": [47, 113, 1], "material": "blueDark"},
+    {"id": "rd-side-l", "name": "Lateral derecho interior", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [11, 56.5, 0], "size": [1, 113, 38], "material": "violet"},
+    {"id": "rd-side-r", "name": "Lateral derecho exterior", "type": "box", "group": "structure", "level": "all", "status": "built", "position": [57, 56.5, 0], "size": [1, 113, 38], "material": "blue"},
+    {"id": "rd-roof", "name": "Cubierta azul", "type": "box", "group": "structure", "level": "nivel-3", "status": "built", "position": [34, 113, 0], "size": [47, 1.4, 38], "material": "blue"},
+    {"id": "rd-floor-1", "name": "Piso derecho nivel 1", "type": "box", "group": "structure", "level": "nivel-1", "status": "built", "position": [34, 0.7, 0], "size": [47, 1.4, 38], "material": "cardboardNatural"},
+    {"id": "rd-floor-2", "name": "Piso derecho nivel 2", "type": "box", "group": "structure", "level": "nivel-2", "status": "built", "position": [34, 39, 0], "size": [45, 1.4, 37], "material": "cardboardNatural"},
+    {"id": "rd-floor-3", "name": "Piso derecho nivel 3", "type": "box", "group": "structure", "level": "nivel-3", "status": "built", "position": [34, 76, 3], "size": [45, 2, 31], "material": "whiteFoam"},
+    {"id": "rd-top-red-trim", "name": "Borde rojo superior", "type": "box", "group": "structure", "level": "nivel-3", "status": "built", "position": [34, 109, 19.2], "size": [45, 2, 1.4], "material": "red"},
+
+    {"id": "garden", "name": "Jardin frontal", "type": "box", "group": "furniture", "level": "base", "status": "built", "position": [-3, 1, 23], "size": [31, 1.2, 10], "material": "grass"},
+    {"id": "foam-bed", "name": "Cama de espuma", "type": "box", "group": "furniture", "level": "nivel-3", "status": "built", "position": [34, 78, 1], "size": [30, 3, 22], "material": "whiteFoam"},
+
+    {"id": "future-elevator-cabin", "name": "Cabina ascensor manual", "type": "box", "group": "future", "level": "all", "status": "future", "position": [1, 24, 17], "size": [12, 14, 10], "material": "future"},
+    {"id": "future-elevator-guide-l", "name": "Guia ascensor izquierda", "type": "box", "group": "future", "level": "all", "status": "future", "position": [-6, 57, 17], "size": [1, 108, 1], "material": "future"},
+    {"id": "future-elevator-guide-r", "name": "Guia ascensor derecha", "type": "box", "group": "future", "level": "all", "status": "future", "position": [8, 57, 17], "size": [1, 108, 1], "material": "future"},
+    {"id": "future-elevator-pulley", "name": "Polea ascensor", "type": "cylinder", "group": "future", "level": "nivel-3", "status": "future", "position": [1, 108, 17], "radius": 3, "height": 2, "rotation": [0, 0, 1.5708], "material": "future"},
+    {"id": "future-slide", "name": "Tobogan exterior helicoidal", "type": "helix", "group": "future", "level": "all", "status": "future", "position": [66, 0, 0], "radius": 8, "tube": 2.2, "height": 95, "turns": 2.4, "material": "future"},
+    {"id": "future-stairs", "name": "Escalera interior", "type": "stairs", "group": "future", "level": "all", "status": "future", "position": [32, 3, 6], "steps": 11, "stepSize": [3.2, 2.8, 5], "riseDirection": [0, 1, -1], "material": "future"},
+    {"id": "future-led-left", "name": "LED torre izquierda", "type": "box", "group": "future", "level": "nivel-3", "status": "future", "position": [-34, 108, 17.8], "size": [41, 0.7, 0.7], "material": "led"},
+    {"id": "future-led-right", "name": "LED torre derecha", "type": "box", "group": "future", "level": "nivel-3", "status": "future", "position": [34, 108, 17.8], "size": [41, 0.7, 0.7], "material": "led"}
+  ],
+  "dimensions": [
+    {"id": "dim-base-width", "label": "119 cm base MDF", "start": [-59.5, -3, 31], "end": [59.5, -3, 31], "status": "reported", "views": ["frontPerspective", "topPlan"]},
+    {"id": "dim-height-left", "label": "113 cm alto", "start": [-62, 0, 20], "end": [-62, 113, 20], "status": "reported", "views": ["frontPerspective"]},
+    {"id": "dim-depth", "label": "38 cm prof. torre", "start": [61, 2, -19], "end": [61, 2, 19], "status": "reported", "views": ["frontPerspective", "topPlan"]},
+    {"id": "dim-core", "label": "21 cm nucleo (provisional)", "start": [-10.5, 116, 22], "end": [10.5, 116, 22], "status": "reported", "views": ["frontPerspective", "topPlan"]}
+  ],
+  "views": {
+    "frontPerspective": {"label": "Frente en perspectiva", "camera": [135, 100, 190], "target": [0, 52, 0]},
+    "topPlan": {"label": "Vista superior (plano)", "camera": [0, 285, 0.01], "target": [0, 46, 0]}
+  },
+  "defaultVisibility": {
+    "structure": true,
+    "furniture": true,
+    "future": false,
+    "dimensions": true,
+    "levels": {"base": true, "nivel-1": true, "nivel-2": true, "nivel-3": true, "all": true}
+  }
+}

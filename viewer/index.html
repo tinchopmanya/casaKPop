@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Visor 3D del plano maestro de la Casa de Muñecas Modular" />
+    <title>Casa de Muñecas Modular — Plano maestro 3D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="brand-copy">
+          <p class="eyebrow">Plano maestro vivo</p>
+          <h1>Casa de Muñecas <em>Modular</em></h1>
+        </div>
+        <div class="status-pill"><span></span> Levantamiento inicial</div>
+      </header>
+
+      <section class="workspace">
+        <aside class="panel controls-panel" aria-label="Controles del modelo">
+          <div class="panel-heading">
+            <p class="eyebrow">Explorar</p>
+            <h2>Capas del modelo</h2>
+          </div>
+
+          <fieldset>
+            <legend>Niveles</legend>
+            <div id="level-controls" class="control-stack"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Información</legend>
+            <div class="control-stack">
+              <label class="switch-row"><span><b>Estructura</b><small>Cartón, pisos y base</small></span><input id="toggle-structure" type="checkbox" checked /><i></i></label>
+              <label class="switch-row"><span><b>Muebles</b><small>Objetos observados</small></span><input id="toggle-furniture" type="checkbox" checked /><i></i></label>
+              <label class="switch-row"><span><b>Medidas</b><small>Cotas informadas</small></span><input id="toggle-dimensions" type="checkbox" checked /><i></i></label>
+              <label class="switch-row future-row"><span><b>Ideas futuras</b><small>Opciones reversibles</small></span><input id="toggle-future" type="checkbox" /><i></i></label>
+            </div>
+          </fieldset>
+
+          <div class="warning-card">
+            <span class="warning-icon">!</span>
+            <div><b>Medidas por verificar</b><p>Los anchos informados suman 141 cm, pero la base mide 119 cm.</p></div>
+          </div>
+
+          <a class="doc-link" href="../docs/medidas.md">Abrir registro completo de medidas <span>↗</span></a>
+        </aside>
+
+        <section class="viewer-stage" aria-label="Modelo tridimensional interactivo">
+          <div id="scene-container"></div>
+          <div class="scene-toolbar" role="group" aria-label="Vistas de cámara">
+            <button id="view-front" class="tool-button active" type="button"><span>◩</span> Perspectiva</button>
+            <button id="view-top" class="tool-button" type="button"><span>▦</span> Plano superior</button>
+            <button id="reset-view" class="icon-button" type="button" title="Restablecer vista" aria-label="Restablecer vista">↻</button>
+          </div>
+          <div class="orientation" aria-hidden="true"><span class="north">F</span><span class="axis axis-x">X</span><span class="axis axis-y">Y</span></div>
+          <div id="object-tooltip" class="object-tooltip" hidden></div>
+          <div id="loading" class="loading-card"><span class="loader"></span><p>Cargando plano maestro…</p></div>
+          <div id="error" class="error-card" hidden></div>
+          <div class="scene-hint">Arrastrá para rotar · Rueda para acercar · Botón derecho para mover</div>
+        </section>
+
+        <aside class="panel info-panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Estado construido</p>
+            <h2>Lectura arquitectónica</h2>
+          </div>
+
+          <div class="mini-plan" aria-label="Esquema superior de módulos">
+            <div class="plan-module left"><span>Violeta</span><b>47*</b></div>
+            <div class="plan-module core"><span>Núcleo</span><b>21</b></div>
+            <div class="plan-module right"><span>Azul</span><b>47*</b></div>
+          </div>
+          <p class="plan-note">* Anchos visuales estimados. Medidas originales: 60 / 21 / 60 cm.</p>
+
+          <dl class="facts">
+            <div><dt>Altura informada</dt><dd>113 cm</dd></div>
+            <div><dt>Profundidad informada</dt><dd>38 cm</dd></div>
+            <div><dt>Base MDF</dt><dd>119 × 58 cm</dd></div>
+            <div><dt>Sistema</dt><dd>2 torres + núcleo</dd></div>
+          </dl>
+
+          <div class="reference-block">
+            <div class="section-row"><h3>Referencias principales</h3><span>2 fotos</span></div>
+            <div class="photo-grid">
+              <a href="../assets/photos/foto-001-frente.png" target="_blank"><img src="../assets/photos/foto-001-frente.png" alt="Fotografía frontal de la casa construida" /><span>01 · Frente</span></a>
+              <a href="../assets/photos/foto-002-superior.png" target="_blank"><img src="../assets/photos/foto-002-superior.png" alt="Fotografía superior de la casa construida" /><span>02 · Superior</span></a>
+            </div>
+          </div>
+
+          <div class="future-list">
+            <div class="section-row"><h3>Opciones futuras</h3><span>Ocultas</span></div>
+            <ul>
+              <li><span>01</span> Ascensor manual</li>
+              <li><span>02</span> Tobogán exterior</li>
+              <li><span>03</span> Escaleras internas</li>
+              <li><span>04</span> Luces LED cálidas</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
+
