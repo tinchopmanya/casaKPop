@@ -33,7 +33,18 @@ Estas no son mediciones físicas. Son estimaciones explícitas usadas para que e
 | E-008 | Altura de nivel 3 | 39 | Estimada | Completa altura declarada de 113 |
 | E-009 | Espesor visual de cartón | 1 | Estimada | Simplificación gráfica, no espesor constructivo |
 
+## Confirmación de orientación — 2026-07-18
+
+Las entradas anteriores se conservan como historial, pero E-001 a E-005 quedaron reemplazadas por la orientación confirmada.
+
+| ID | Elemento | Medida | Estado | Fuente | Consecuencia |
+|---|---|---:|---|---|---|
+| M-011 | Torre derecha, giro en planta | 90° | Confirmada por el usuario | Foto 003 y mensaje del 2026-07-18 | Forma una esquina con la torre violeta |
+| M-012 | Torre derecha, tamaño físico | Igual a torre izquierda | Confirmada por el usuario | Mensaje del 2026-07-18 | 60 × 38 × 113 cm aprox. antes del giro |
+| D-001 | Ocupación total sobre eje X | 119 | Derivada exacta de medidas informadas | 60 + 21 + 38 | Coincide con el ancho informado de la base |
+| E-010 | Profundidad de cada puente | 12 | Estimada desde fotografías | Fotos 001–003 | Debe reemplazarse al medir |
+| E-011 | Voladizo de torre azul | 1 por extremo | Estimada por centrado | 60 de torre sobre base de 58 aprox. | Puede ser redondeo de la base |
+
 ## Comprobación pendiente
 
-La primera campaña de medición debe resolver M-002, M-005, M-006 y M-007 en una misma toma: ancho total, ancho exterior de cada torre, luz entre torres y márgenes respecto de la base.
-
+La próxima campaña debe medir los dos puentes: ancho de paso, profundidad, espesor, altura desde la base y distancia respecto del frente de cada caja. También debe confirmar si la torre azul sobresale realmente 1 cm por delante y por detrás de la base.

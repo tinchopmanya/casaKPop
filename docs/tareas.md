@@ -2,7 +2,8 @@
 
 ## Pendientes
 
-- [ ] Resolver la contradicción entre anchos de módulos y base mediante medición física.
+- [ ] Medir ancho, profundidad, espesor y posición exacta de ambos puentes.
+- [ ] Confirmar el posible voladizo de 1 cm de la torre azul sobre la base.
 - [ ] Medir alturas de todos los pisos y espesores reales.
 - [ ] Tomar fotos ortogonales con cinta métrica: frente, laterales, fondo y superior.
 - [ ] Identificar puntos débiles, deformaciones y uniones existentes.
@@ -25,4 +26,5 @@
 - [x] Crear modelo 3D inicial basado en la estructura actual.
 - [x] Crear visor Three.js con controles, vistas y capas.
 - [x] Registrar ideas futuras como elementos opcionales separados.
-
+- [x] Confirmar y modelar la disposición de las cajas en L con giro de 90°.
+- [x] Resolver la aparente contradicción de ancho: 60 + 21 + 38 = 119 cm.

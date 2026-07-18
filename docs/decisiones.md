@@ -11,10 +11,10 @@
 ## D-002 — No ocultar la contradicción dimensional
 
 - **Fecha:** 2026-07-18
-- **Estado:** Provisional hasta medición física
+- **Estado:** Superada por D-006; se conserva como antecedente
 - **Decisión:** Conservar 60 cm, 21 cm, 60 cm y 119 cm como valores informados, aunque no sean compatibles entre sí.
 - **Motivo:** Evitar presentar una corrección inventada como medida real.
-- **Consecuencia:** La implantación 3D usa anchos estimados de 47 cm, 21 cm y 47 cm sobre la base de 119 cm, con 2 cm de margen por lado. Estos anchos sirven solo para visualizar y deberán reemplazarse al medir.
+- **Consecuencia histórica:** La primera implantación 3D usó anchos estimados de 47 cm, 21 cm y 47 cm. Esa interpretación fue descartada al confirmarse el giro de 90°.
 
 ## D-003 — Un único origen geométrico
 
@@ -37,3 +37,10 @@
 - **Decisión:** Ascensor, tobogán, escaleras y LED se modelan como alternativas ocultas por defecto.
 - **Motivo:** Evaluarlas sin alterar ni confundir el estado construido.
 
+## D-006 — Implantación en L con torre azul girada
+
+- **Fecha:** 2026-07-18
+- **Estado:** Confirmada por el usuario
+- **Decisión:** Modelar ambas cajas con dimensiones locales 60 × 38 × 113 cm y girar la torre azul 90° sobre el eje vertical, con su abertura hacia el núcleo.
+- **Motivo:** Corresponde a la construcción real y explica la base de 119 cm: 60 cm de la torre violeta + 21 cm del núcleo + 38 cm de profundidad de la torre girada.
+- **Consecuencia:** Se eliminan los anchos visuales estimados de 47 cm. Los puentes quedan como piezas independientes de 21 cm de luz y profundidad provisional de 12 cm.

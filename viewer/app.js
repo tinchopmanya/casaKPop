@@ -214,13 +214,29 @@ function populate(data) {
     Object.entries(data.materials).map(([key, value]) => [key, materialFrom(value)])
   );
 
+  const assemblyParents = new Map();
+  for (const assembly of data.assemblies || []) {
+    for (const groupName of Object.keys(groups)) {
+      if (groupName === "dimensions") continue;
+      const parent = new THREE.Group();
+      parent.name = `${assembly.name} · ${groupName}`;
+      parent.position.set(...assembly.position);
+      parent.rotation.set(...assembly.rotation);
+      groups[groupName].add(parent);
+      assemblyParents.set(`${groupName}:${assembly.id}`, parent);
+    }
+  }
+
   for (const element of data.elements) {
     const material = materials[element.material];
     let object;
     if (element.type === "helix") object = buildHelix(element, material);
     else if (element.type === "stairs") object = buildStairs(element, material);
     else object = register(new THREE.Mesh(geometryFor(element), material), element);
-    groups[element.group].add(object);
+    const parent = element.assembly
+      ? assemblyParents.get(`${element.group}:${element.assembly}`)
+      : groups[element.group];
+    parent.add(object);
   }
 
   for (const dimension of data.dimensions) groups.dimensions.add(buildDimension(dimension));

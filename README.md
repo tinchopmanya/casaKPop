@@ -33,14 +33,14 @@ Controles disponibles:
 ## Estado inicial
 
 - Torre izquierda violeta, cerrada por laterales y fondo, con tres niveles y fachada decorada.
-- Torre derecha azul, abierta al frente, con niveles interiores parciales.
+- Torre derecha azul, girada 90° respecto de la violeta, abierta hacia el núcleo y con niveles interiores parciales.
 - Núcleo central rosado unido mediante puentes de cartón.
 - Base de MDF.
 - Ascensor manual, tobogán exterior, escaleras y luces LED registrados como ideas futuras opcionales, apagadas por defecto.
 
 ## Precisión dimensional
 
-Las medidas originales se preservan en `docs/medidas.md` y `model/casa.json`. Existe una incompatibilidad pendiente de verificación: dos módulos de 60 cm más un núcleo de 21 cm suman 141 cm, pero la base informada mide 119 cm. La implantación del modelo es provisional y está marcada como estimada; no sustituye una medición física.
+Las medidas originales se preservan en `docs/medidas.md` y `model/casa.json`. La orientación en L fue confirmada el 18 de julio de 2026: la torre azul está girada 90°. Así, el ancho de implantación es `60 + 21 + 38 = 119 cm`, coincidente con la base. La profundidad informada de la base (58 cm aprox.) todavía debe verificarse frente a los 60 cm ocupados por la torre girada. La profundidad y posición exacta de los puentes también siguen marcadas como estimadas.
 
 ## Estructura
 

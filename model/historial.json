@@ -4,6 +4,26 @@
   "changes": [
     {
       "date": "2026-07-18",
+      "description": "Se confirmó que las dos cajas tienen el mismo tamaño y forman una esquina con la torre azul girada 90 grados. Se reconstruyó la implantación 3D en L, se orientó la abertura azul hacia el núcleo y se reemplazaron las plataformas centrales por dos puentes estrechos y un bastidor rosado.",
+      "filesModified": [
+        "README.md",
+        "docs/proyecto.md",
+        "docs/decisiones.md",
+        "docs/medidas.md",
+        "docs/tareas.md",
+        "model/casa.json",
+        "model/historial.json",
+        "viewer/index.html",
+        "viewer/app.js",
+        "viewer/style.css",
+        "assets/photos/README.md",
+        "assets/photos/foto-003-esquina-superior.png",
+        "assets/renders/modelo-3d-frente.png",
+        "assets/renders/modelo-3d-superior.png"
+      ]
+    },
+    {
+      "date": "2026-07-18",
       "description": "Se corrigió la apertura local del visor agregando un iniciador de doble clic para Windows, un cierre controlado y un mensaje claro cuando index.html se abre mediante el protocolo file.",
       "filesModified": [
         ".gitignore",
