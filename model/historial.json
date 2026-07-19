@@ -4,6 +4,23 @@
   "changes": [
     {
       "date": "2026-07-18",
+      "description": "Se corrigió la alineación en planta: ambas cajas ahora coinciden por la cara posterior contra la pared, dejando la torre azul 22 cm adelantada. La pared lateral violeta se reconstruyó cerrada con dos aberturas pequeñas alineadas con los puentes, equivalentes a las de la torre azul.",
+      "filesModified": [
+        "README.md",
+        "docs/proyecto.md",
+        "docs/decisiones.md",
+        "docs/medidas.md",
+        "docs/tareas.md",
+        "model/casa.json",
+        "model/historial.json",
+        "viewer/index.html",
+        "viewer/style.css",
+        "assets/renders/modelo-3d-frente.png",
+        "assets/renders/modelo-3d-superior.png"
+      ]
+    },
+    {
+      "date": "2026-07-18",
       "description": "Se corrigió el sentido de la esquina azul. El frente grande quedó abierto hacia el frente común de la casa; la pared que recibe los puentes se reconstruyó cerrada mediante cinco paños, dejando dos aberturas pequeñas alineadas con los puentes, y la cara exterior quedó cerrada.",
       "filesModified": [
         "README.md",

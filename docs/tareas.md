@@ -4,6 +4,7 @@
 
 - [ ] Medir ancho, profundidad, espesor y posición exacta de ambos puentes.
 - [ ] Medir ancho y alto de las dos aberturas pequeñas en la pared azul.
+- [ ] Medir ancho y alto de las dos aberturas pequeñas en la pared violeta.
 - [ ] Confirmar el posible voladizo de 1 cm de la torre azul sobre la base.
 - [ ] Medir alturas de todos los pisos y espesores reales.
 - [ ] Tomar fotos ortogonales con cinta métrica: frente, laterales, fondo y superior.
@@ -30,3 +31,5 @@
 - [x] Confirmar y modelar la disposición de las cajas en L con giro de 90°.
 - [x] Resolver la aparente contradicción de ancho: 60 + 21 + 38 = 119 cm.
 - [x] Corregir el sentido del giro azul y cerrar la pared que recibe los puentes.
+- [x] Alinear ambas cajas por la cara posterior contra la pared.
+- [x] Agregar aberturas de puente en la pared lateral violeta.

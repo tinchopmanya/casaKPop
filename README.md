@@ -34,6 +34,8 @@ Controles disponibles:
 
 - Torre izquierda violeta, cerrada por laterales y fondo, con tres niveles y fachada decorada.
 - Torre derecha azul, girada 90° en planta respecto de la violeta: frente grande abierto hacia el frente común de la casa y pared de conexión cerrada salvo por pequeñas aberturas para los puentes.
+- Ambas torres se alinean por la cara posterior que apoya contra la pared; por eso la torre azul sobresale aproximadamente 22 cm hacia el frente.
+- La pared lateral derecha de la torre violeta también permanece cerrada salvo por dos aberturas pequeñas para los puentes.
 - Núcleo central rosado unido mediante puentes de cartón.
 - Base de MDF.
 - Ascensor manual, tobogán exterior, escaleras y luces LED registrados como ideas futuras opcionales, apagadas por defecto.

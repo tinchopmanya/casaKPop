@@ -55,6 +55,16 @@ Las entradas anteriores se conservan como historial, pero E-001 a E-005 quedaron
 | E-012 | Aberturas de puente, ancho | 12 | Estimada para el modelo | Proporción visual | Medir cada abertura por separado |
 | E-013 | Aberturas de puente, alto | 25–26 | Estimada para el modelo | Proporción visual | Medir desde la cara superior de cada puente |
 
+## Alineación posterior — 2026-07-18
+
+| ID | Elemento | Medida o condición | Estado | Fuente | Nota |
+|---|---|---|---|---|---|
+| M-016 | Caras posteriores de ambas torres | Alineadas | Confirmada por el usuario | Mensaje del 2026-07-18 | Son las caras que apoyan contra la pared |
+| D-002 | Diferencia entre frentes | 22 | Derivada de 60 − 38 | Orientación y dimensiones confirmadas | La torre azul sobresale hacia el frente |
+| M-017 | Torre violeta, pared de puentes | Cerrada con dos aberturas pequeñas | Confirmada por el usuario | Mensaje del 2026-07-18 | Similar a la pared azul |
+| E-014 | Huecos violetas, ancho | 12 | Estimada para el modelo | Igualación provisional con huecos azules | Medir por separado |
+| E-015 | Huecos violetas, alto | 25–26 | Estimada para el modelo | Igualación provisional con huecos azules | Medir por separado |
+
 ## Comprobación pendiente
 
 La próxima campaña debe medir los dos puentes y sus aberturas en la pared azul: ancho libre, alto libre, profundidad del puente, espesor, altura desde la base y distancia respecto del frente de cada caja. También debe confirmar si la torre azul sobresale realmente 1 cm por delante y por detrás de la base.

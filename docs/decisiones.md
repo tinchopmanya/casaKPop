@@ -52,3 +52,11 @@
 - **Decisión:** Invertir el sentido del giro de la torre azul. El frente grande queda abierto hacia el mismo frente visual que la torre violeta; la cara que mira al núcleo se mantiene cerrada y solo tiene dos aberturas pequeñas alineadas con los puentes.
 - **Motivo:** La vista frontal muestra el gran vano azul abierto, mientras el puente llega a una pared lateral continua.
 - **Consecuencia:** El modelo usa un giro de +90°, abre la cara frontal resultante, cierra la cara exterior y divide la pared de conexión en cinco paños alrededor de dos huecos provisionales de 12 cm de ancho. Las dimensiones de esos huecos deben medirse.
+
+## D-008 — Alineación posterior y huecos en ambas torres
+
+- **Fecha:** 2026-07-18
+- **Estado:** Confirmada por el usuario
+- **Decisión:** Alinear las caras posteriores de las dos cajas en Z = −30 cm, no sus frentes. Reconstruir la pared lateral derecha de la torre violeta con dos aberturas pequeñas alineadas con los puentes.
+- **Motivo:** Ambas cajas apoyan contra la misma pared posterior. La diferencia de profundidad debe verse hacia el frente y los puentes atraviesan huecos en las dos cajas.
+- **Consecuencia:** El centro de la torre violeta pasa de Z = 10 a Z = −11 cm. Su frente queda en Z = 8 cm y el frente azul en Z = 30 cm, generando un saliente de 22 cm. Cada pared de conexión se divide en cinco paños alrededor de dos aberturas provisionales.

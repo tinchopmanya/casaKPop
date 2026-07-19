@@ -10,6 +10,8 @@ Primera digitalización registrada el 18 de julio de 2026 a partir de dos fotogr
 
 - Torre izquierda violeta: tres niveles, dos vanos por nivel, fachada decorada y cerramientos laterales/superior.
 - Torre derecha azul: caja del mismo tamaño girada 90° en planta; el frente grande está abierto hacia el frente común de la casa y la cara de unión con el núcleo está cerrada salvo por aberturas pequeñas para los puentes.
+- Alineación: las caras posteriores de ambas cajas coinciden contra la pared. La torre azul, con 60 cm sobre el eje de profundidad, sobresale 22 cm respecto del frente violeta de 38 cm.
+- La pared violeta que recibe los puentes está cerrada y posee dos aberturas pequeñas equivalentes a las de la pared azul.
 - Núcleo central rosado: bastidor frontal y puentes estrechos que salvan los 21 cm entre las cajas.
 - Base de MDF con una zona de jardín decorativo al frente.
 - Cubiertas superiores removibles o tipo tapa con ranuras de agarre.
@@ -29,6 +31,7 @@ El modelo 3D inicial representa esta organización sin rediseñarla. Las ampliac
 - Se confirmó la implantación en L: la torre azul está girada 90° respecto de la violeta y ambas cajas tienen el mismo tamaño.
 - Se reemplazó la implantación alineada por conjuntos 3D independientes y se reconstruyeron los puentes como piezas estrechas.
 - Se corrigió el sentido del giro azul. La pared que recibe los puentes se reconstruyó con paños cerrados alrededor de dos huecos pequeños.
+- Se corrigió la alineación posterior de las cajas y se agregaron las dos aberturas faltantes en la pared lateral violeta.
 - Se registraron cuatro ideas futuras no invasivas.
 
 ## Ideas futuras

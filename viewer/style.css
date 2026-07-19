@@ -227,7 +227,7 @@ legend { width: 100%; margin-bottom: 10px; color: var(--muted); font-size: 10px;
 .plan-module { position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 7px; color: white; line-height: 1; box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
 .plan-module span { font-size: 8px; opacity: .82; }
 .plan-module b { margin-top: 5px; font-size: 14px; }
-.plan-module.left { left: 8px; bottom: 8px; width: calc(50.42% - 8px); height: calc(63.33% - 8px); background: var(--violet); }
+.plan-module.left { left: 8px; top: 8px; width: calc(50.42% - 8px); height: calc(63.33% - 8px); background: var(--violet); }
 .plan-module.core { left: 50.42%; top: 40%; width: 17.65%; height: 20%; background: var(--pink); z-index: 2; }
 .plan-module.right { right: 8px; top: 8px; width: calc(31.93% - 8px); height: calc(100% - 16px); background: var(--blue); }
 .plan-note { margin: 7px 0 18px; color: var(--muted); font-size: 9px; line-height: 1.45; }
