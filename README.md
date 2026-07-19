@@ -33,7 +33,7 @@ Controles disponibles:
 ## Estado inicial
 
 - Torre izquierda violeta, cerrada por laterales y fondo, con tres niveles y fachada decorada.
-- Torre derecha azul, girada 90° respecto de la violeta, abierta hacia el núcleo y con niveles interiores parciales.
+- Torre derecha azul, girada 90° en planta respecto de la violeta: frente grande abierto hacia el frente común de la casa y pared de conexión cerrada salvo por pequeñas aberturas para los puentes.
 - Núcleo central rosado unido mediante puentes de cartón.
 - Base de MDF.
 - Ascensor manual, tobogán exterior, escaleras y luces LED registrados como ideas futuras opcionales, apagadas por defecto.

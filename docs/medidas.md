@@ -45,6 +45,16 @@ Las entradas anteriores se conservan como historial, pero E-001 a E-005 quedaron
 | E-010 | Profundidad de cada puente | 12 | Estimada desde fotografías | Fotos 001–003 | Debe reemplazarse al medir |
 | E-011 | Voladizo de torre azul | 1 por extremo | Estimada por centrado | 60 de torre sobre base de 58 aprox. | Puede ser redondeo de la base |
 
+## Corrección del sentido de apertura — 2026-07-18
+
+| ID | Elemento | Medida o condición | Estado | Fuente | Nota |
+|---|---|---|---|---|---|
+| M-013 | Torre azul, sentido del giro | +90° en el sistema del modelo | Confirmada por el usuario | Fotos 004–005 | Reemplaza el sentido registrado en M-011; se conserva el antecedente |
+| M-014 | Torre azul, frente principal | Abierto hacia el frente común de la casa | Confirmada visualmente | Foto 005 | No mira hacia el núcleo |
+| M-015 | Torre azul, cara de los puentes | Cerrada con aberturas pequeñas | Confirmada por el usuario | Fotos 004–005 | No es una abertura de piso completo |
+| E-012 | Aberturas de puente, ancho | 12 | Estimada para el modelo | Proporción visual | Medir cada abertura por separado |
+| E-013 | Aberturas de puente, alto | 25–26 | Estimada para el modelo | Proporción visual | Medir desde la cara superior de cada puente |
+
 ## Comprobación pendiente
 
-La próxima campaña debe medir los dos puentes: ancho de paso, profundidad, espesor, altura desde la base y distancia respecto del frente de cada caja. También debe confirmar si la torre azul sobresale realmente 1 cm por delante y por detrás de la base.
+La próxima campaña debe medir los dos puentes y sus aberturas en la pared azul: ancho libre, alto libre, profundidad del puente, espesor, altura desde la base y distancia respecto del frente de cada caja. También debe confirmar si la torre azul sobresale realmente 1 cm por delante y por detrás de la base.

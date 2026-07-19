@@ -3,6 +3,7 @@
 ## Pendientes
 
 - [ ] Medir ancho, profundidad, espesor y posición exacta de ambos puentes.
+- [ ] Medir ancho y alto de las dos aberturas pequeñas en la pared azul.
 - [ ] Confirmar el posible voladizo de 1 cm de la torre azul sobre la base.
 - [ ] Medir alturas de todos los pisos y espesores reales.
 - [ ] Tomar fotos ortogonales con cinta métrica: frente, laterales, fondo y superior.
@@ -28,3 +29,4 @@
 - [x] Registrar ideas futuras como elementos opcionales separados.
 - [x] Confirmar y modelar la disposición de las cajas en L con giro de 90°.
 - [x] Resolver la aparente contradicción de ancho: 60 + 21 + 38 = 119 cm.
+- [x] Corregir el sentido del giro azul y cerrar la pared que recibe los puentes.

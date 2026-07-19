@@ -40,7 +40,15 @@
 ## D-006 — Implantación en L con torre azul girada
 
 - **Fecha:** 2026-07-18
-- **Estado:** Confirmada por el usuario
-- **Decisión:** Modelar ambas cajas con dimensiones locales 60 × 38 × 113 cm y girar la torre azul 90° sobre el eje vertical, con su abertura hacia el núcleo.
+- **Estado:** Parcialmente superada por D-007; tamaño y forma en L conservados
+- **Decisión histórica:** Modelar ambas cajas con dimensiones locales 60 × 38 × 113 cm y girar la torre azul 90° sobre el eje vertical. La primera interpretación orientó erróneamente la abertura hacia el núcleo.
 - **Motivo:** Corresponde a la construcción real y explica la base de 119 cm: 60 cm de la torre violeta + 21 cm del núcleo + 38 cm de profundidad de la torre girada.
 - **Consecuencia:** Se eliminan los anchos visuales estimados de 47 cm. Los puentes quedan como piezas independientes de 21 cm de luz y profundidad provisional de 12 cm.
+
+## D-007 — Frente azul común y pared de puentes cerrada
+
+- **Fecha:** 2026-07-18
+- **Estado:** Confirmada por el usuario y fotos 004–005
+- **Decisión:** Invertir el sentido del giro de la torre azul. El frente grande queda abierto hacia el mismo frente visual que la torre violeta; la cara que mira al núcleo se mantiene cerrada y solo tiene dos aberturas pequeñas alineadas con los puentes.
+- **Motivo:** La vista frontal muestra el gran vano azul abierto, mientras el puente llega a una pared lateral continua.
+- **Consecuencia:** El modelo usa un giro de +90°, abre la cara frontal resultante, cierra la cara exterior y divide la pared de conexión en cinco paños alrededor de dos huecos provisionales de 12 cm de ancho. Las dimensiones de esos huecos deben medirse.

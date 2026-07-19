@@ -4,6 +4,25 @@
   "changes": [
     {
       "date": "2026-07-18",
+      "description": "Se corrigió el sentido de la esquina azul. El frente grande quedó abierto hacia el frente común de la casa; la pared que recibe los puentes se reconstruyó cerrada mediante cinco paños, dejando dos aberturas pequeñas alineadas con los puentes, y la cara exterior quedó cerrada.",
+      "filesModified": [
+        "README.md",
+        "docs/proyecto.md",
+        "docs/decisiones.md",
+        "docs/medidas.md",
+        "docs/tareas.md",
+        "model/casa.json",
+        "model/historial.json",
+        "viewer/index.html",
+        "assets/photos/README.md",
+        "assets/photos/foto-004-superior-orientacion-corregida.png",
+        "assets/photos/foto-005-frente-orientacion-corregida.png",
+        "assets/renders/modelo-3d-frente.png",
+        "assets/renders/modelo-3d-superior.png"
+      ]
+    },
+    {
+      "date": "2026-07-18",
       "description": "Se confirmó que las dos cajas tienen el mismo tamaño y forman una esquina con la torre azul girada 90 grados. Se reconstruyó la implantación 3D en L, se orientó la abertura azul hacia el núcleo y se reemplazaron las plataformas centrales por dos puentes estrechos y un bastidor rosado.",
       "filesModified": [
         "README.md",

@@ -9,7 +9,7 @@ Convertir la estructura artesanal existente en una casa de muñecas modular, dur
 Primera digitalización registrada el 18 de julio de 2026 a partir de dos fotografías del objeto construido y una lámina de referencia dimensional. La composición observable incluye dos cajas principales de cartón conectadas por un núcleo angosto:
 
 - Torre izquierda violeta: tres niveles, dos vanos por nivel, fachada decorada y cerramientos laterales/superior.
-- Torre derecha azul: caja del mismo tamaño girada 90° para formar una esquina; su abertura queda orientada hacia el núcleo.
+- Torre derecha azul: caja del mismo tamaño girada 90° en planta; el frente grande está abierto hacia el frente común de la casa y la cara de unión con el núcleo está cerrada salvo por aberturas pequeñas para los puentes.
 - Núcleo central rosado: bastidor frontal y puentes estrechos que salvan los 21 cm entre las cajas.
 - Base de MDF con una zona de jardín decorativo al frente.
 - Cubiertas superiores removibles o tipo tapa con ranuras de agarre.
@@ -28,6 +28,7 @@ El modelo 3D inicial representa esta organización sin rediseñarla. Las ampliac
 - Se agregó un acceso de doble clic para Windows porque los navegadores bloquean `casa.json` cuando `index.html` se abre como archivo local.
 - Se confirmó la implantación en L: la torre azul está girada 90° respecto de la violeta y ambas cajas tienen el mismo tamaño.
 - Se reemplazó la implantación alineada por conjuntos 3D independientes y se reconstruyeron los puentes como piezas estrechas.
+- Se corrigió el sentido del giro azul. La pared que recibe los puentes se reconstruyó con paños cerrados alrededor de dos huecos pequeños.
 - Se registraron cuatro ideas futuras no invasivas.
 
 ## Ideas futuras
