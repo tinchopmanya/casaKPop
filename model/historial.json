@@ -4,6 +4,24 @@
   "changes": [
     {
       "date": "2026-07-22",
+      "description": "Se reemplazaron los marcadores laterales por Mueble 1 y Mueble 2, dos ampliaciones habitables más altas que la casa de cartón. La propuesta usa sin acortar las placas de 177 y 166 cm, reparte las seis placas de 50,3 cm y reutiliza una tapa y una cubierta fina en cada mueble. Se agregó una vista específica y se registró la necesidad de anclaje antivuelco independiente.",
+      "filesModified": [
+        "README.md",
+        "ideas.md",
+        "docs/proyecto.md",
+        "docs/decisiones.md",
+        "docs/materiales.md",
+        "docs/medidas.md",
+        "docs/tareas.md",
+        "model/casa.json",
+        "model/historial.json",
+        "viewer/index.html",
+        "viewer/app.js",
+        "assets/renders/modelo-3d-futuro.png"
+      ]
+    },
+    {
+      "date": "2026-07-22",
       "description": "Se actualizó integralmente el plano maestro sin modificar la estructura construida. Se corrigió la base a 3 mm, se inventariaron MDF, tapas, canaletas abiertas, cuerda, LED, muebles, pasto y tablas pendientes; se creó ideas.md; y el visor separa construido, disponible y futuro. La piscina tiene prioridad alta, los módulos laterales son independientes y el tobogán se representa como canaleta U abierta.",
       "filesModified": [
         "README.md",

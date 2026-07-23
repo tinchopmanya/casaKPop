@@ -44,6 +44,7 @@ Desde el 22 de julio de 2026 el visor distingue tres estados: estructura actual,
 - Se priorizó la piscina con zona exterior y se registraron dos módulos laterales MDF estructuralmente independientes.
 - El tobogán conceptual pasó de tubo a canaleta abierta en U.
 - El visor separa estructura construida, material disponible y ampliaciones futuras.
+- Se definieron Mueble 1 y Mueble 2 como futuras casas laterales de 177 y 166 cm, utilizando las placas largas enteras y repartiendo las seis placas de 50,3 cm.
 
 ## Ideas futuras
 
@@ -53,7 +54,7 @@ Desde el 22 de julio de 2026 el visor distingue tres estados: estructura actual,
 - Iluminación LED cálida, de bajo voltaje, con canaletas registrables.
 - Refuerzo progresivo con MDF fino o listones donde el cartón reciba cargas repetidas.
 - Piscina plástica de aproximadamente 30 × 20 cm con patio de pasto artificial, prioridad alta.
-- Dos muebles laterales MDF independientes, uno por lado.
+- Mueble 1 de 177 cm y Mueble 2 de 166 cm: forman parte de la casa ampliada, aunque tienen estructura y anclaje independientes del cartón.
 - Terrazas, balcones, habitaciones, garaje, jardines y módulos desmontables.
 
 El registro completo y su prioridad se mantiene en `ideas.md`.

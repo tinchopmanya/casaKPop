@@ -76,7 +76,7 @@ const pointer = new THREE.Vector2();
 let houseData;
 const urlParams = new URLSearchParams(window.location.search);
 const requestedView = urlParams.get("view");
-const viewAliases = { front: "frontPerspective", top: "topPlan", materials: "materialsOverview" };
+const viewAliases = { front: "frontPerspective", top: "topPlan", materials: "materialsOverview", future: "futureExpansion" };
 const requestedLayers = new Set((urlParams.get("layers") || "").split(",").filter(Boolean));
 let activeView = viewAliases[requestedView] || "frontPerspective";
 let cameraAnimation = null;
@@ -391,6 +391,7 @@ function setView(viewName, animate = true) {
   document.querySelector("#view-front").classList.toggle("active", viewName === "frontPerspective");
   document.querySelector("#view-top").classList.toggle("active", viewName === "topPlan");
   document.querySelector("#view-materials").classList.toggle("active", viewName === "materialsOverview");
+  document.querySelector("#view-future").classList.toggle("active", viewName === "futureExpansion");
 
   if (!animate) {
     camera.position.copy(nextPosition);
@@ -460,6 +461,11 @@ document.querySelector("#view-materials").addEventListener("click", () => {
   groups.available.visible = true;
   document.querySelector("#toggle-available").checked = true;
   setView("materialsOverview");
+});
+document.querySelector("#view-future").addEventListener("click", () => {
+  groups.future.visible = true;
+  document.querySelector("#toggle-future").checked = true;
+  setView("futureExpansion");
 });
 document.querySelector("#reset-view").addEventListener("click", () => setView(activeView));
 renderer.domElement.addEventListener("pointermove", updateTooltip);

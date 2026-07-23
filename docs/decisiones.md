@@ -100,3 +100,19 @@
 - **Decisión:** Registrar la base existente como MDF de 119 × 58 × 0,3 cm.
 - **Motivo:** Nueva medida informada por el usuario.
 - **Consecuencia:** El valor anterior de 1,5 cm se conserva como antecedente superado y la geometría visible usa 3 mm.
+
+## D-014 — Mueble 1 y Mueble 2 son ampliaciones de la casa
+
+- **Fecha:** 2026-07-22
+- **Estado:** Conceptual, solicitada por el usuario
+- **Decisión:** Reemplazar los marcadores laterales genéricos por dos casas-mueble más altas que la estructura de cartón: Mueble 1 de 177 cm y Mueble 2 de 166 cm.
+- **Motivo:** Las alturas aprovechan enteras las placas largas disponibles y amplían el proyecto como conjunto arquitectónico.
+- **Consecuencia:** Cada mueble usa dos laterales largos, tres placas de 50,3 cm, una tapa de cartón entera y una placa fina de 61 cm. Ambos se apoyan y estabilizan de forma independiente para no cargar el cartón.
+
+## D-015 — Distribución inicial de usos
+
+- **Fecha:** 2026-07-22
+- **Estado:** Propuesta para evaluar
+- **Decisión:** Reservar el nivel de 113 cm como vínculo arquitectónico con la casa actual. Proponer garaje/guardado y habitación para Mueble 1; piscina/vestuario y habitaciones para Mueble 2; usar los niveles superiores para terraza, jardín alto, observatorio o salida de tobogán.
+- **Motivo:** Crea continuidad con la casa existente y aprovecha la nueva altura sin modificarla.
+- **Consecuencia:** Los usos pueden cambiar; las posiciones de pisos sí responden al material disponible y deben validarse antes de cortar o perforar.

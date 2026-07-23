@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.4.0",
+  "schemaVersion": "1.5.0",
   "project": {
     "name": "Casa de Muñecas Modular",
     "updatedAt": "2026-07-22",
@@ -103,7 +103,11 @@
       {"id": "pasto-artificial", "name": "Pasto artificial", "quantity": null, "dimensions": null},
       {"id": "tablas-grandes", "name": "Otras tablas grandes", "quantity": null, "dimensions": null}
     ],
-    "toolsAndSupplies": ["caladora", "trinchetas", "silicona-caliente", "pistola-de-silicona", "cuerda", "luces-led", "muebles-mdf-armados", "pinturas", "carton-adicional"]
+    "toolsAndSupplies": ["caladora", "trinchetas", "silicona-caliente", "pistola-de-silicona", "cuerda", "luces-led", "muebles-mdf-armados", "pinturas", "carton-adicional"],
+    "conceptualAssignments": [
+      {"target": "mueble-1", "materials": ["2 placas 30 × 177 × 1,5", "3 placas 30 × 50,3 × 1,3", "1 tapa de carton 116 × 38 × 3 aprox.", "1 placa MDF fino 30 × 61 × 0,3"], "cuts": "sin cortes en las piezas principales"},
+      {"target": "mueble-2", "materials": ["2 placas 30 × 166 × 1,5", "3 placas 30 × 50,3 × 1,3", "1 tapa de carton 116 × 38 × 3 aprox.", "1 placa MDF fino 30 × 61 × 0,3"], "cuts": "sin cortes en las piezas principales"}
+    ]
   },
   "components": [
     {
@@ -156,6 +160,24 @@
         {"id": "TD-PUENTE-1", "level": "nivel-1", "kind": "abertura-pequeña-en-pared-cerrada", "faces": "-x-mundo", "certainty": "observada-dimension-estimada"},
         {"id": "TD-PUENTE-2", "level": "nivel-2", "kind": "abertura-pequeña-en-pared-cerrada", "faces": "-x-mundo", "certainty": "observada-dimension-estimada"}
       ]
+    },
+    {
+      "id": "mueble-1",
+      "kind": "ampliacion-habitable-lateral",
+      "status": "futuro-conceptual",
+      "relationship": "parte-de-la-casa-ampliada-con-estructura-independiente",
+      "dimensions": {"width": 53.3, "height": 177, "depth": 30, "certainty": "propuesta-derivada-del-material-disponible"},
+      "materialPlan": ["2 MDF 30x177x1.5", "3 MDF 30x50.3x1.3", "1 tapa carton 116x38x3 aprox.", "1 MDF fino 30x61x0.3"],
+      "safety": "requiere-arriostramiento-y-anclaje-antivuelco-propio"
+    },
+    {
+      "id": "mueble-2",
+      "kind": "ampliacion-habitable-lateral",
+      "status": "futuro-conceptual",
+      "relationship": "parte-de-la-casa-ampliada-con-estructura-independiente",
+      "dimensions": {"width": 53.3, "height": 166, "depth": 30, "certainty": "propuesta-derivada-del-material-disponible"},
+      "materialPlan": ["2 MDF 30x166x1.5", "3 MDF 30x50.3x1.3", "1 tapa carton 116x38x3 aprox.", "1 MDF fino 30x61x0.3"],
+      "safety": "requiere-arriostramiento-y-anclaje-antivuelco-propio"
     }
   ],
   "elements": [
@@ -213,14 +235,27 @@
     {"id": "future-elevator-guide-l", "name": "Guia ascensor izquierda", "type": "box", "group": "future", "level": "all", "status": "future", "position": [4, 57, 15], "size": [1, 108, 1], "material": "future"},
     {"id": "future-elevator-guide-r", "name": "Guia ascensor derecha", "type": "box", "group": "future", "level": "all", "status": "future", "position": [18, 57, 15], "size": [1, 108, 1], "material": "future"},
     {"id": "future-elevator-pulley", "name": "Polea ascensor", "type": "cylinder", "group": "future", "level": "nivel-3", "status": "future", "position": [11, 108, 15], "radius": 3, "height": 2, "rotation": [0, 0, 1.5708], "material": "future"},
-    {"id": "future-slide", "name": "Tobogan exterior con canaleta abierta", "type": "openChannelHelix", "group": "future", "level": "all", "status": "future", "position": [66, 2, -9], "radius": 9, "height": 92, "turns": 2.15, "profile": {"base": 6, "sideHeight": 6, "displayThickness": 0.35}, "availableLengths": [190, 60], "pathDimensions": "conceptuales-no-constructivas", "material": "future"},
+    {"id": "future-slide", "name": "Tobogan exterior con canaleta abierta", "type": "openChannelHelix", "group": "future", "level": "all", "status": "future", "position": [125, 2, -9], "radius": 9, "height": 92, "turns": 2.15, "profile": {"base": 6, "sideHeight": 6, "displayThickness": 0.35}, "availableLengths": [190, 60], "pathDimensions": "conceptuales-no-constructivas", "note": "reubicado-fuera-de-mueble-2; recorrido-final-pendiente-de-espacio-y-rigidez", "material": "future"},
     {"id": "future-stairs", "name": "Escalera interior", "type": "stairs", "group": "future", "assembly": "right-tower", "level": "all", "status": "future", "position": [0, 3, 6], "steps": 11, "stepSize": [3.2, 2.8, 5], "riseDirection": [0, 1, -1], "material": "future"},
     {"id": "future-led-left", "name": "LED torre violeta", "type": "box", "group": "future", "assembly": "left-tower", "level": "nivel-3", "status": "future", "position": [0, 108, 17.8], "size": [54, 0.7, 0.7], "material": "led"},
     {"id": "future-led-right", "name": "LED torre azul", "type": "box", "group": "future", "assembly": "right-tower", "level": "nivel-3", "status": "future", "position": [0, 108, 17.8], "size": [54, 0.7, 0.7], "material": "led"},
     {"id": "future-pool", "name": "Piscina plastica para muñecas", "type": "poolOutline", "group": "future", "level": "base", "status": "future", "priority": "alta", "position": [-23, 0.3, 46], "size": [30, 0.8, 20], "knownPlanDimensions": [30, 20], "heightCertainty": "solo-representacion-visual", "material": "poolConcept"},
     {"id": "future-pool-garden", "name": "Patio o jardin asociado a piscina", "type": "box", "group": "future", "level": "base", "status": "future", "position": [-23, 0.15, 46], "size": [38, 0.2, 27], "dimensions": "conceptuales", "material": "grassConcept"},
-    {"id": "future-side-module-left", "name": "Modulo lateral MDF izquierdo independiente", "type": "marker", "group": "future", "level": "all", "status": "future", "position": [-77, 28, -8], "dimensioned": false, "material": "future"},
-    {"id": "future-side-module-right", "name": "Modulo lateral MDF derecho independiente", "type": "marker", "group": "future", "level": "all", "status": "future", "position": [76, 28, -8], "dimensioned": false, "material": "future"},
+    {"id": "future-mueble-1-side-left", "name": "Mueble 1 · lateral exterior 177 cm", "type": "box", "group": "future", "level": "all", "status": "future", "position": [-112.05, 88.5, -15], "size": [1.5, 177, 30], "material": "future", "proposalBasis": "placa-entera-30x177x1.5"},
+    {"id": "future-mueble-1-side-right", "name": "Mueble 1 · lateral junto a casa", "type": "box", "group": "future", "level": "all", "status": "future", "position": [-60.25, 88.5, -15], "size": [1.5, 177, 30], "material": "future", "proposalBasis": "placa-entera-30x177x1.5"},
+    {"id": "future-mueble-1-base", "name": "Mueble 1 · base", "type": "box", "group": "future", "level": "all", "status": "future", "position": [-86.15, 0.65, -15], "size": [50.3, 1.3, 30], "material": "future", "proposalBasis": "placa-entera-30x50.3x1.3"},
+    {"id": "future-mueble-1-level-house", "name": "Mueble 1 · piso alineado con techo actual", "type": "box", "group": "future", "level": "all", "status": "future", "position": [-86.15, 113, -15], "size": [50.3, 1.3, 30], "material": "future", "proposalBasis": "placa-entera-30x50.3x1.3"},
+    {"id": "future-mueble-1-top", "name": "Mueble 1 · piso superior", "type": "box", "group": "future", "level": "all", "status": "future", "position": [-86.15, 176.35, -15], "size": [50.3, 1.3, 30], "material": "future", "proposalBasis": "placa-entera-30x50.3x1.3"},
+    {"id": "future-mueble-1-back", "name": "Mueble 1 · tapa de carton entera como respaldo inferior", "type": "box", "group": "future", "level": "all", "status": "future", "position": [-86.15, 58, -28.5], "size": [38, 116, 3], "material": "availableCardboard", "proposalBasis": "tapa-entera-sin-cortar"},
+    {"id": "future-mueble-1-canopy", "name": "Mueble 1 · cubierta ligera entera", "type": "box", "group": "future", "level": "all", "status": "future", "position": [-86.15, 177.15, -15], "size": [61, 0.3, 30], "material": "future", "proposalBasis": "mdf-fino-entero-30x61x0.3"},
+
+    {"id": "future-mueble-2-side-left", "name": "Mueble 2 · lateral junto a casa", "type": "box", "group": "future", "level": "all", "status": "future", "position": [60.25, 83, -15], "size": [1.5, 166, 30], "material": "future", "proposalBasis": "placa-entera-30x166x1.5"},
+    {"id": "future-mueble-2-side-right", "name": "Mueble 2 · lateral exterior 166 cm", "type": "box", "group": "future", "level": "all", "status": "future", "position": [112.05, 83, -15], "size": [1.5, 166, 30], "material": "future", "proposalBasis": "placa-entera-30x166x1.5"},
+    {"id": "future-mueble-2-base", "name": "Mueble 2 · base", "type": "box", "group": "future", "level": "all", "status": "future", "position": [86.15, 0.65, -15], "size": [50.3, 1.3, 30], "material": "future", "proposalBasis": "placa-entera-30x50.3x1.3"},
+    {"id": "future-mueble-2-level-house", "name": "Mueble 2 · piso alineado con techo actual", "type": "box", "group": "future", "level": "all", "status": "future", "position": [86.15, 113, -15], "size": [50.3, 1.3, 30], "material": "future", "proposalBasis": "placa-entera-30x50.3x1.3"},
+    {"id": "future-mueble-2-top", "name": "Mueble 2 · piso superior", "type": "box", "group": "future", "level": "all", "status": "future", "position": [86.15, 165.35, -15], "size": [50.3, 1.3, 30], "material": "future", "proposalBasis": "placa-entera-30x50.3x1.3"},
+    {"id": "future-mueble-2-back", "name": "Mueble 2 · tapa de carton entera como respaldo inferior", "type": "box", "group": "future", "level": "all", "status": "future", "position": [86.15, 58, -28.5], "size": [38, 116, 3], "material": "availableCardboard", "proposalBasis": "tapa-entera-sin-cortar"},
+    {"id": "future-mueble-2-canopy", "name": "Mueble 2 · cubierta ligera entera", "type": "box", "group": "future", "level": "all", "status": "future", "position": [86.15, 166.15, -15], "size": [61, 0.3, 30], "material": "future", "proposalBasis": "mdf-fino-entero-30x61x0.3"},
 
     {"id": "available-gutter-190", "name": "Canaleta PVC abierta · 190 cm", "type": "openChannel", "group": "available", "level": "all", "status": "available", "position": [0, 8, -88], "length": 190, "profile": {"base": 6, "sideHeight": 6, "displayThickness": 0.35}, "material": "availablePvc"},
     {"id": "available-gutter-60", "name": "Canaleta PVC abierta · 60 cm", "type": "openChannel", "group": "available", "level": "all", "status": "available", "position": [0, 18, -88], "length": 60, "profile": {"base": 6, "sideHeight": 6, "displayThickness": 0.35}, "material": "availablePvc"},
@@ -242,7 +277,8 @@
   "views": {
     "frontPerspective": {"label": "Frente en perspectiva", "camera": [85, 100, 235], "target": [0, 52, 5]},
     "topPlan": {"label": "Vista superior (plano)", "camera": [0, 310, 0.01], "target": [0, 48, 0]},
-    "materialsOverview": {"label": "Inventario disponible", "camera": [0, 225, -325], "target": [0, 18, -150]}
+    "materialsOverview": {"label": "Inventario disponible", "camera": [0, 225, -325], "target": [0, 18, -150]},
+    "futureExpansion": {"label": "Mueble 1 y Mueble 2", "camera": [190, 145, 385], "target": [0, 82, -3]}
   },
   "defaultVisibility": {
     "structure": true,

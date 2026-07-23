@@ -6,4 +6,4 @@
 | `modelo-3d-frente.png` | Captura verificada del visor | Vista frontal en perspectiva del modelo inicial |
 | `modelo-3d-superior.png` | Captura verificada del visor | Vista superior tipo plano del modelo inicial |
 | `modelo-3d-materiales.png` | Captura del visor | Inventario medido en una capa independiente |
-| `modelo-3d-futuro.png` | Captura del visor | Opciones conceptuales, incluida piscina, módulos laterales y tobogán abierto |
+| `modelo-3d-futuro.png` | Captura del visor | Mueble 1 de 177 cm, Mueble 2 de 166 cm y relación con la casa actual |

@@ -40,6 +40,7 @@ Controles disponibles:
 - Núcleo central rosado unido mediante puentes de cartón.
 - Base de MDF de 119 × 58 × 0,3 cm.
 - Piscina, módulos laterales, ascensor manual, tobogán exterior, escaleras y luces LED registrados como ideas futuras opcionales, apagadas por defecto.
+- Mueble 1 de 177 cm y Mueble 2 de 166 cm modelados como futuras casas laterales, usando las placas largas enteras.
 - El tobogán se representa mediante canaletas abiertas en U, no como tubo cerrado.
 
 ## Precisión dimensional

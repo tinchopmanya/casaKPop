@@ -20,6 +20,10 @@
 - [ ] Buscar una piscina plástica accesible de aproximadamente 30 × 20 cm antes de decidir fabricación.
 - [ ] Diseñar apoyos desmontables para el tobogán sin cortar las canaletas.
 - [ ] Evaluar usos enteros para las dos tapas de cartón de 116 × 38 cm.
+- [ ] Medir el espacio lateral izquierdo necesario para Mueble 1: 53,3 × 30 cm propuestos.
+- [ ] Medir el espacio lateral derecho necesario para Mueble 2: 53,3 × 30 cm propuestos.
+- [ ] Definir respaldo rígido y anclaje antivuelco para ambos muebles altos; no usar las cajas como soporte.
+- [ ] Confirmar si se aprueba la asignación sin cortes: placas de 177 cm para Mueble 1 y placas de 166 cm para Mueble 2.
 
 ## En progreso
 
@@ -42,3 +46,5 @@
 - [x] Crear `ideas.md` y separar ideas futuras del estado construido.
 - [x] Diferenciar en el visor estructura actual, material disponible y futuro conceptual.
 - [x] Corregir el espesor de la base a 3 mm y el tobogán a perfil abierto.
+- [x] Incorporar Mueble 1 y Mueble 2 como casas laterales más altas en la capa futura.
+- [x] Preparar una asignación conceptual de las placas MDF sin cortar las piezas principales.

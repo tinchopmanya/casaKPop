@@ -87,6 +87,8 @@ Las entradas nuevas no eliminan las anteriores. M-018 reemplaza el valor histór
 | M-027 | MDF fino, grupo B | 1 pieza de 15 × 44 × 0,3 | Informada por el usuario | Mensaje 2026-07-22 | Disponible |
 | M-028 | Tapas originales de cartón | 2 piezas de 116 × 38 × 3 aprox. | Informada por el usuario | Mensaje 2026-07-22 | Preferencia por reutilización entera |
 | C-001 | Piscina plástica futura | 30 × 20 aprox. en planta | Conceptual, no adquirida | Mensaje 2026-07-22 | Altura desconocida; no es medida construida |
+| C-002 | Mueble 1 futuro | 177 alto × 53,3 ancho × 30 profundidad | Propuesta derivada del stock | Placas disponibles | Altura usa placas de 177 enteras; ancho = 50,3 + 1,5 + 1,5 |
+| C-003 | Mueble 2 futuro | 166 alto × 53,3 ancho × 30 profundidad | Propuesta derivada del stock | Placas disponibles | Altura usa placas de 166 enteras; ancho = 50,3 + 1,5 + 1,5 |
 
 ## Medidas que siguen faltando
 
@@ -96,3 +98,4 @@ Las entradas nuevas no eliminan las anteriores. M-018 reemplaza el valor histór
 - Largo y diámetro de la cuerda; longitud, tensión y potencia de las luces LED.
 - Medidas, material y espesor de las otras tablas grandes.
 - Espacio disponible para piscina y módulos laterales fuera de la base actual.
+- Posición final, separación respecto de la casa y tolerancias de montaje de Mueble 1 y Mueble 2.
