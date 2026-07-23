@@ -90,6 +90,16 @@ Las entradas nuevas no eliminan las anteriores. M-018 reemplaza el valor histór
 | C-002 | Mueble 1 futuro | 177 alto × 53,3 ancho × 30 profundidad | Propuesta derivada del stock | Placas disponibles | Altura usa placas de 177 enteras; ancho = 50,3 + 1,5 + 1,5 |
 | C-003 | Mueble 2 futuro | 166 alto × 53,3 ancho × 30 profundidad | Propuesta derivada del stock | Placas disponibles | Altura usa placas de 166 enteras; ancho = 50,3 + 1,5 + 1,5 |
 
+## Implantación en esquina — 2026-07-23
+
+| ID | Elemento | Medida o condición | Estado | Fuente | Nota |
+|---|---|---|---|---|---|
+| M-029 | Paredes de la habitación | 90° entre pared A y pared B | Confirmada por el usuario | Mensaje 2026-07-23 | Violeta da a pared A; azul da a pared B |
+| C-004 | Mueble 2, implantación | Continúa desde el frente azul, con vanos enfrentados | Orientación confirmada; holguras conceptuales | Mensaje 2026-07-23 | Posición exacta por medir en la habitación |
+| C-005 | Estantes Mueble 1 | Base, estante a 58 cm y estante a 113 cm | Propuesta con tres placas disponibles | Modelo 1.6.0 | Alturas sujetas a programa y uniones |
+| C-006 | Estantes Mueble 2 | Base, estante a 58 cm y estante a 113 cm | Propuesta con tres placas disponibles | Modelo 1.6.0 | Piscina conceptual sobre primer estante |
+| C-007 | Tobogán entre muebles | Canaleta real de 190 cm; extremos conceptuales separados 173,8 cm | Propuesta, no verificada físicamente | Modelo 1.6.0 | Excedente permite entrada y ajuste; medir antes de cortar |
+
 ## Medidas que siguen faltando
 
 - Espesor real del PVC y si los 6 cm corresponden a medida interior o exterior.
@@ -97,5 +107,7 @@ Las entradas nuevas no eliminan las anteriores. M-018 reemplaza el valor histór
 - Medidas de cada mueble MDF armado.
 - Largo y diámetro de la cuerda; longitud, tensión y potencia de las luces LED.
 - Medidas, material y espesor de las otras tablas grandes.
-- Espacio disponible para piscina y módulos laterales fuera de la base actual.
+- Peso de la piscina llena y carga admisible del estante de Mueble 2.
 - Posición final, separación respecto de la casa y tolerancias de montaje de Mueble 1 y Mueble 2.
+- Distancia tridimensional real entre los apoyos del tobogán y rigidez de la canaleta de 190 cm.
+- Holgura necesaria para retirar la casa de cartón sin rozar los muebles fijos.

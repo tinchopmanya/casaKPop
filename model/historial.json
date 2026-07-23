@@ -3,6 +3,26 @@
   "project": "Casa de Muñecas Modular",
   "changes": [
     {
+      "date": "2026-07-23",
+      "description": "Se aclaró la implantación definitiva: la casa de cartón es un esquinero móvil, con violeta sobre pared A y azul sobre pared B perpendicular. Mueble 1 permanece fijo junto a violeta; Mueble 2 continúa hacia adelante desde azul con vanos enfrentados. Se añadieron estantes, piscina y pasto dentro de Mueble 2, y un tobogán aéreo de canaleta abierta entre los dos muebles fijos sin apoyos en el cartón.",
+      "filesModified": [
+        "README.md",
+        "ideas.md",
+        "docs/proyecto.md",
+        "docs/decisiones.md",
+        "docs/materiales.md",
+        "docs/medidas.md",
+        "docs/tareas.md",
+        "model/casa.json",
+        "model/historial.json",
+        "viewer/index.html",
+        "viewer/app.js",
+        "assets/renders/README.md",
+        "assets/renders/modelo-3d-futuro.png",
+        "prompts/modelo-maestro.md"
+      ]
+    },
+    {
       "date": "2026-07-22",
       "description": "Se reemplazaron los marcadores laterales por Mueble 1 y Mueble 2, dos ampliaciones habitables más altas que la casa de cartón. La propuesta usa sin acortar las placas de 177 y 166 cm, reparte las seis placas de 50,3 cm y reutiliza una tapa y una cubierta fina en cada mueble. Se agregó una vista específica y se registró la necesidad de anclaje antivuelco independiente.",
       "filesModified": [

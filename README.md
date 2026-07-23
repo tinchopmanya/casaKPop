@@ -35,13 +35,14 @@ Controles disponibles:
 
 - Torre izquierda violeta, cerrada por laterales y fondo, con tres niveles y fachada decorada.
 - Torre derecha azul, girada 90° en planta respecto de la violeta: frente grande abierto hacia el frente común de la casa y pared de conexión cerrada salvo por pequeñas aberturas para los puentes.
-- Ambas torres se alinean por la cara posterior que apoya contra la pared; por eso la torre azul sobresale aproximadamente 22 cm hacia el frente.
+- El conjunto de cartón ocupa una esquina: la torre violeta da a una pared y el lateral exterior azul a la pared perpendicular. La geometría construida no se modifica.
 - La pared lateral derecha de la torre violeta también permanece cerrada salvo por dos aberturas pequeñas para los puentes.
 - Núcleo central rosado unido mediante puentes de cartón.
 - Base de MDF de 119 × 58 × 0,3 cm.
-- Piscina, módulos laterales, ascensor manual, tobogán exterior, escaleras y luces LED registrados como ideas futuras opcionales, apagadas por defecto.
-- Mueble 1 de 177 cm y Mueble 2 de 166 cm modelados como futuras casas laterales, usando las placas largas enteras.
-- El tobogán se representa mediante canaletas abiertas en U, no como tubo cerrado.
+- Piscina, ascensor manual, escaleras y luces LED registrados como ideas futuras opcionales, apagadas por defecto.
+- Mueble 1 de 177 cm queda sobre la pared violeta. Mueble 2 de 166 cm continúa la torre azul sobre la segunda pared, con sus aberturas enfrentadas.
+- Los muebles son fijos; la casa de cartón permanece intacta y móvil.
+- El tobogán protagonista cruza entre los dos muebles fijos mediante la canaleta abierta de 190 cm; nunca se apoya en el cartón.
 
 ## Precisión dimensional
 

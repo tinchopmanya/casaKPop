@@ -4,20 +4,22 @@ Este archivo conserva todas las ideas del proyecto, incluso las que todavía no 
 
 ## Prioridad alta
 
-### Piscina y zona exterior
+### Piscina y jardín dentro de Mueble 2
 
 - Piscina plástica para muñecas de aproximadamente 30 × 20 cm.
 - Preferencia: comprar una opción accesible antes que fabricarla, si el costo y la escala resultan adecuados.
-- Asociar el pasto artificial disponible como patio o jardín.
-- Mantener el conjunto desmontable y sin pegarlo a las cajas actuales.
-- Pendiente: medir el espacio libre real de la base y cualquier futura extensión exterior.
+- Integrar piscina y pasto artificial sobre un estante reforzado de Mueble 2; no ocupar el piso frente a la casa móvil.
+- Mantener la piscina desmontable para limpieza y proteger el MDF contra humedad.
+- Pendiente: medir el pasto, el peso de la piscina llena y la capacidad del estante antes de construir.
 
-### Tobogán exterior con canaleta abierta
+### Tobogán aéreo entre los dos muebles fijos
 
 - Reutilizar las canaletas PVC de 190 y 60 cm, ambas con perfil abierto: base de 6 cm y laterales de 6 cm.
 - No tratarlas como tubos cerrados.
-- Evaluar recorrido recto, curvo o por tramos, con apoyos independientes.
-- No cortar hasta definir recorrido, radios posibles, altura de salida y sistema desmontable.
+- Propuesta llamativa: la canaleta de 190 cm cruza en diagonal desde el nivel superior de Mueble 1 hasta el nivel de piscina de Mueble 2.
+- Sus únicos apoyos deben estar en los muebles fijos. No puede tocar, perforar ni depender de la casa de cartón móvil.
+- Reservar la canaleta de 60 cm para una entrada, llegada o segundo tramo después de una prueba a escala real.
+- No cortar ni curvar hasta comprobar la distancia real entre muebles, la rigidez del PVC, la pendiente y las protecciones laterales.
 
 ## Desarrollo modular
 
@@ -26,23 +28,22 @@ Este archivo conserva todas las ideas del proyecto, incluso las que todavía no 
 - Ubicación conceptual: lado izquierdo de la torre violeta, compartiendo la alineación posterior.
 - Altura propuesta: 177 cm, mayor que los 113 cm de la casa de cartón, porque aprovecha enteras las dos placas de 30 × 177 × 1,5 cm como laterales.
 - Ancho exterior derivado: 53,3 cm, usando placas de 50,3 cm entre dos laterales de 1,5 cm. Profundidad: 30 cm.
-- Tres placas de 30 × 50,3 × 1,3 cm formarían base, piso a la altura aproximada del techo actual y piso superior.
+- Tres placas de 30 × 50,3 × 1,3 cm formarían base, estante inferior y estante alineado aproximadamente con el techo actual.
 - Una tapa de cartón de 116 × 38 × 3 cm se conservaría entera como respaldo inferior centrado.
 - Una placa fina de 30 × 61 × 0,3 cm se usaría entera como cubierta o marquesina.
-- Programa sugerido: garaje o guardado abajo; habitación vinculada a la casa a 113 cm; terraza, observatorio o salida del tobogán arriba.
-- La canaleta de 190 cm podría ensayarse como bajada exterior desde este sector y la de 60 cm como tramo de entrada o llegada; el recorrido depende del espacio lateral real y de cuánto admitan curvarse.
+- Programa sugerido: garaje o guardado abajo; habitación intermedia; terraza, observatorio o salida del tobogán arriba.
 
 ### Mueble 2 — nueva casa lateral de 166 cm
 
-- Ubicación conceptual: lado derecho de la torre azul, compartiendo la alineación posterior.
+- Ubicación conceptual: continuación frontal de la torre azul sobre la segunda pared de la esquina. Sus aberturas miran hacia las aberturas azules.
 - Altura propuesta: 166 cm, también mayor que la casa actual, usando enteras las dos placas de 30 × 166 × 1,5 cm como laterales.
 - Ancho exterior derivado: 53,3 cm. Profundidad: 30 cm.
-- Las otras tres placas de 30 × 50,3 × 1,3 cm formarían base, piso conectado visualmente con el techo actual y piso superior.
+- Las otras tres placas de 30 × 50,3 × 1,3 cm formarían base, estante para piscina/jardín y estante superior.
 - La segunda tapa de cartón se conservaría entera como respaldo inferior.
 - La segunda placa fina de 30 × 61 × 0,3 cm funcionaría como cubierta o balcón superior.
-- Programa sugerido: zona de piscina y vestuario abajo; habitaciones en el nivel medio; terraza, jardín alto o sala de luces arriba.
+- Programa sugerido: guardado abajo; piscina y jardín artificial sobre el primer estante; habitaciones o sala de luces arriba.
 
-Los dos muebles son parte arquitectónica de la casa, aunque deben sostenerse por sí mismos y no colgar del cartón. Antes de construirlos hay que medir el lugar disponible y definir anclajes antivuelco.
+Los dos muebles son partes fijas de la casa arquitectónica y se anclan a pared o piso. La estructura de cartón permanece intacta y móvil: debe poder retirarse sin desmontar muebles, piscina ni tobogán.
 
 ### Tapas originales de cartón
 

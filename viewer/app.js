@@ -160,6 +160,25 @@ function buildOpenChannel(element, material) {
   return registerComposite(group, element);
 }
 
+function buildOpenChannelBetween(element, material) {
+  const group = new THREE.Group();
+  const thickness = element.profile.displayThickness;
+  const width = element.profile.base;
+  const sideHeight = element.profile.sideHeight;
+  const bottom = new THREE.Mesh(new THREE.BoxGeometry(element.length, thickness, width), material);
+  bottom.position.y = thickness / 2;
+  group.add(bottom);
+  for (const side of [-1, 1]) {
+    const wall = new THREE.Mesh(new THREE.BoxGeometry(element.length, sideHeight, thickness), material);
+    wall.position.set(0, sideHeight / 2, side * (width / 2 - thickness / 2));
+    group.add(wall);
+  }
+  const object = registerComposite(group, element);
+  const direction = new THREE.Vector3(...element.end).sub(new THREE.Vector3(...element.start)).normalize();
+  object.quaternion.setFromUnitVectors(new THREE.Vector3(1, 0, 0), direction);
+  return object;
+}
+
 function buildOpenChannelHelix(element, material) {
   const group = new THREE.Group();
   const segments = 88;
@@ -328,6 +347,7 @@ function populate(data) {
     const material = materials[element.material];
     let object;
     if (element.type === "openChannel") object = buildOpenChannel(element, material);
+    else if (element.type === "openChannelBetween") object = buildOpenChannelBetween(element, material);
     else if (element.type === "openChannelHelix") object = buildOpenChannelHelix(element, material);
     else if (element.type === "stack") object = buildStack(element, material);
     else if (element.type === "poolOutline") object = buildPoolOutline(element, material);

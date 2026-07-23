@@ -116,3 +116,27 @@
 - **Decisión:** Reservar el nivel de 113 cm como vínculo arquitectónico con la casa actual. Proponer garaje/guardado y habitación para Mueble 1; piscina/vestuario y habitaciones para Mueble 2; usar los niveles superiores para terraza, jardín alto, observatorio o salida de tobogán.
 - **Motivo:** Crea continuidad con la casa existente y aprovecha la nueva altura sin modificarla.
 - **Consecuencia:** Los usos pueden cambiar; las posiciones de pisos sí responden al material disponible y deben validarse antes de cortar o perforar.
+
+## D-016 — Dos paredes perpendiculares y cartón móvil
+
+- **Fecha:** 2026-07-23
+- **Estado:** Confirmada por el usuario
+- **Decisión:** Interpretar la implantación como esquina de habitación: violeta sobre pared A y lateral exterior azul sobre pared B a 90°. La estructura de cartón queda intacta y debe poder retirarse.
+- **Motivo:** El conjunto de cartón es un esquinero móvil, no una estructura para recibir cargas permanentes.
+- **Consecuencia:** Los muebles se fijan a pared o piso y requieren una junta de encuentro desmontable con el cartón.
+
+## D-017 — Mueble 2 continúa la torre azul
+
+- **Fecha:** 2026-07-23
+- **Estado:** Conceptual, orientación confirmada
+- **Decisión:** Mueble 2 deja de ser lateral y se coloca delante de la torre azul, siguiendo la pared B. Sus aberturas miran hacia las aberturas azules.
+- **Motivo:** Debe leerse como continuación de la casa de muñecas y no como un volumen paralelo agregado.
+- **Consecuencia:** Mueble 2 se centra provisionalmente en X = 33,35 cm, ocupa Z = 30–60 cm y alinea su lateral derecho con la pared B. La holgura final debe medirse.
+
+## D-018 — Estantes habitables, piscina elevada y tobogán independiente
+
+- **Fecha:** 2026-07-23
+- **Estado:** Propuesta para verificar
+- **Decisión:** Usar las tres placas de 50,3 cm de cada mueble como base y dos estantes. Colocar piscina y pasto en el primer estante de Mueble 2. Probar la canaleta de 190 cm como tobogán aéreo entre ambos muebles fijos.
+- **Motivo:** Libera el piso, crea más habitaciones y convierte el tobogán en una pieza protagonista.
+- **Consecuencia:** Hay que calcular carga y protección contra agua del estante, medir el recorrido real y diseñar apoyos solo en MDF. La canaleta de 60 cm queda reservada para entrada o llegada.

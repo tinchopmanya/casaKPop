@@ -56,8 +56,10 @@ Esta asignación usa todas las piezas principales sin cortar y todavía no autor
 
 | Destino | Piezas asignadas | Resultado propuesto |
 |---|---|---|
-| Mueble 1 | 2 placas de 177 cm; 3 placas de 50,3 cm; 1 tapa de cartón; 1 MDF fino de 61 cm | Casa lateral de 177 × 53,3 × 30 cm aprox. |
-| Mueble 2 | 2 placas de 166 cm; 3 placas de 50,3 cm; 1 tapa de cartón; 1 MDF fino de 61 cm | Casa lateral de 166 × 53,3 × 30 cm aprox. |
+| Mueble 1 | 2 placas de 177 cm; 3 placas de 50,3 cm; 1 tapa de cartón; 1 MDF fino de 61 cm | Casa fija sobre pared A, con base y dos estantes |
+| Mueble 2 | 2 placas de 166 cm; 3 placas de 50,3 cm; 1 tapa de cartón; 1 MDF fino de 61 cm | Continuación fija de la torre azul sobre pared B, con base y dos estantes |
 | Reserva | MDF fino de 15 × 44 cm, canaletas, cuerda, LED, cartón adicional y tablas sin medir | Panel de control, barandas, iluminación, tobogán y refuerzos por definir |
 
 Los laterales largos definen alturas superiores a la casa actual. Los 53,3 cm surgen de 50,3 cm de luz más dos espesores laterales de 1,5 cm. Ambos muebles requieren respaldo o arriostramiento y anclaje antivuelco independientes del cartón.
+
+La piscina exige una bandeja impermeable o protección equivalente sobre el estante. La canaleta de 190 cm se reserva para el tramo protagonista entre muebles; la de 60 cm queda sin cortar hasta resolver entrada y llegada.

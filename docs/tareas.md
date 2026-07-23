@@ -16,14 +16,17 @@
 - [ ] Evaluar un tobogán exterior desmontable.
 - [ ] Medir el espesor real del PVC y confirmar si los 6 cm son interiores o exteriores.
 - [ ] Medir y fotografiar el pasto artificial restante, los muebles MDF armados y las tablas grandes.
-- [ ] Medir el espacio exterior disponible para piscina y módulos laterales.
+- [ ] Medir la posición real de las dos paredes de la esquina y los espacios ocupados por cada mueble fijo.
 - [ ] Buscar una piscina plástica accesible de aproximadamente 30 × 20 cm antes de decidir fabricación.
 - [ ] Diseñar apoyos desmontables para el tobogán sin cortar las canaletas.
 - [ ] Evaluar usos enteros para las dos tapas de cartón de 116 × 38 cm.
 - [ ] Medir el espacio lateral izquierdo necesario para Mueble 1: 53,3 × 30 cm propuestos.
-- [ ] Medir el espacio lateral derecho necesario para Mueble 2: 53,3 × 30 cm propuestos.
+- [ ] Medir el tramo frente a la torre azul para Mueble 2: 53,3 × 30 cm propuestos, con aberturas enfrentadas.
 - [ ] Definir respaldo rígido y anclaje antivuelco para ambos muebles altos; no usar las cajas como soporte.
 - [ ] Confirmar si se aprueba la asignación sin cortes: placas de 177 cm para Mueble 1 y placas de 166 cm para Mueble 2.
+- [ ] Definir la holgura y el sistema de encuentro para retirar la casa de cartón sin mover los muebles.
+- [ ] Calcular el peso de la piscina llena y proteger contra humedad el estante de Mueble 2.
+- [ ] Probar a escala real el recorrido de 190 cm entre ambos muebles antes de cortar o curvar PVC.
 
 ## En progreso
 
@@ -48,3 +51,6 @@
 - [x] Corregir el espesor de la base a 3 mm y el tobogán a perfil abierto.
 - [x] Incorporar Mueble 1 y Mueble 2 como casas laterales más altas en la capa futura.
 - [x] Preparar una asignación conceptual de las placas MDF sin cortar las piezas principales.
+- [x] Reorientar Mueble 2 como continuación de la torre azul con vanos enfrentados.
+- [x] Trasladar piscina y pasto al estante de Mueble 2.
+- [x] Agregar dos niveles de estantes a cada mueble y un tobogán aéreo entre estructuras fijas.

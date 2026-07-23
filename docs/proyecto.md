@@ -10,7 +10,7 @@ Primera digitalización registrada el 18 de julio de 2026 a partir de dos fotogr
 
 - Torre izquierda violeta: tres niveles, dos vanos por nivel, fachada decorada y cerramientos laterales/superior.
 - Torre derecha azul: caja del mismo tamaño girada 90° en planta; el frente grande está abierto hacia el frente común de la casa y la cara de unión con el núcleo está cerrada salvo por aberturas pequeñas para los puentes.
-- Alineación: las caras posteriores de ambas cajas coinciden contra la pared. La torre azul, con 60 cm sobre el eje de profundidad, sobresale 22 cm respecto del frente violeta de 38 cm.
+- Implantación en la habitación: el conjunto de cartón ocupa una esquina. La torre violeta da a la pared A y el lateral exterior azul da a la pared B, perpendicular. La geometría de cartón no cambia.
 - La pared violeta que recibe los puentes está cerrada y posee dos aberturas pequeñas equivalentes a las de la pared azul.
 - Núcleo central rosado: bastidor frontal y puentes estrechos que salvan los 21 cm entre las cajas.
 - Base de MDF con una zona de jardín decorativo al frente.
@@ -19,6 +19,8 @@ Primera digitalización registrada el 18 de julio de 2026 a partir de dos fotogr
 El modelo 3D inicial representa esta organización sin rediseñarla. Las ampliaciones opcionales están separadas en una capa futura y se muestran apagadas por defecto.
 
 Desde el 22 de julio de 2026 el visor distingue tres estados: estructura actual, materiales disponibles todavía sin instalar e ideas futuras conceptuales. La base construida se registra con 3 mm de espesor. Ningún material inventariado se considera agregado a la casa.
+
+La estructura de cartón será móvil y podrá retirarse de la esquina. Mueble 1 y Mueble 2 serán instalaciones fijas, autoportantes y ancladas sin transferir cargas al cartón.
 
 ## Cronología
 
@@ -46,6 +48,15 @@ Desde el 22 de julio de 2026 el visor distingue tres estados: estructura actual,
 - El visor separa estructura construida, material disponible y ampliaciones futuras.
 - Se definieron Mueble 1 y Mueble 2 como futuras casas laterales de 177 y 166 cm, utilizando las placas largas enteras y repartiendo las seis placas de 50,3 cm.
 
+### 2026-07-23 — Esquina fija y casa móvil
+
+- Se confirmó que la parte violeta da a una pared y la azul a la pared perpendicular.
+- Mueble 1 conserva su posición junto a la torre violeta.
+- Mueble 2 continúa hacia adelante desde la torre azul; sus vanos quedan enfrentados con los vanos azules.
+- Ambos muebles incorporan estantes. Piscina y pasto pasan al primer estante de Mueble 2.
+- Se reemplazó el tobogán helicoidal por una propuesta aérea con la canaleta abierta de 190 cm entre los dos muebles fijos.
+- El cartón sigue intacto y móvil; muebles, piscina y tobogán no dependen de él.
+
 ## Ideas futuras
 
 - Ascensor manual con polea y cuerda, preferentemente adosado al núcleo o lateral derecho.
@@ -53,7 +64,7 @@ Desde el 22 de julio de 2026 el visor distingue tres estados: estructura actual,
 - Escaleras internas compactas entre niveles.
 - Iluminación LED cálida, de bajo voltaje, con canaletas registrables.
 - Refuerzo progresivo con MDF fino o listones donde el cartón reciba cargas repetidas.
-- Piscina plástica de aproximadamente 30 × 20 cm con patio de pasto artificial, prioridad alta.
+- Piscina plástica de aproximadamente 30 × 20 cm con pasto artificial dentro de Mueble 2, prioridad alta.
 - Mueble 1 de 177 cm y Mueble 2 de 166 cm: forman parte de la casa ampliada, aunque tienen estructura y anclaje independientes del cartón.
 - Terrazas, balcones, habitaciones, garaje, jardines y módulos desmontables.
 
