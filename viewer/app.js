@@ -50,12 +50,12 @@ const floor = new THREE.Mesh(
   new THREE.MeshStandardMaterial({ color: 0xded7d2, roughness: 1, transparent: true, opacity: 0.6 })
 );
 floor.rotation.x = -Math.PI / 2;
-floor.position.y = -1.56;
+floor.position.y = -0.36;
 floor.receiveShadow = true;
 scene.add(floor);
 
 const grid = new THREE.GridHelper(300, 30, 0xb9abbc, 0xd7cdd4);
-grid.position.y = -1.5;
+grid.position.y = -0.35;
 grid.material.transparent = true;
 grid.material.opacity = 0.22;
 scene.add(grid);
@@ -63,6 +63,7 @@ scene.add(grid);
 const groups = {
   structure: new THREE.Group(),
   furniture: new THREE.Group(),
+  available: new THREE.Group(),
   future: new THREE.Group(),
   dimensions: new THREE.Group()
 };
@@ -73,8 +74,11 @@ const interactives = [];
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
 let houseData;
-const requestedView = new URLSearchParams(window.location.search).get("view");
-let activeView = requestedView === "top" ? "topPlan" : "frontPerspective";
+const urlParams = new URLSearchParams(window.location.search);
+const requestedView = urlParams.get("view");
+const viewAliases = { front: "frontPerspective", top: "topPlan", materials: "materialsOverview" };
+const requestedLayers = new Set((urlParams.get("layers") || "").split(",").filter(Boolean));
+let activeView = viewAliases[requestedView] || "frontPerspective";
 let cameraAnimation = null;
 
 function materialFrom(definition) {
@@ -119,21 +123,114 @@ function register(mesh, element) {
   return mesh;
 }
 
-function buildHelix(element, material) {
-  const points = [];
-  const segments = 140;
-  for (let i = 0; i <= segments; i += 1) {
-    const t = i / segments;
-    const angle = t * Math.PI * 2 * element.turns;
-    points.push(new THREE.Vector3(
-      Math.cos(angle) * element.radius,
-      element.height * (1 - t),
-      Math.sin(angle) * element.radius
-    ));
+function registerComposite(group, element) {
+  group.name = element.name;
+  group.userData.element = element;
+  group.position.set(...element.position);
+  if (element.rotation) group.rotation.set(...element.rotation);
+  const levels = element.level === "all" ? ["nivel-1", "nivel-2", "nivel-3"] : [element.level];
+  group.userData.levels = levels;
+  group.traverse((child) => {
+    if (!child.isMesh) return;
+    child.castShadow = true;
+    child.receiveShadow = true;
+    child.userData.element = element;
+    interactives.push(child);
+  });
+  for (const level of levels) {
+    if (!levelObjects.has(level)) levelObjects.set(level, new Set());
+    levelObjects.get(level).add(group);
   }
-  const curve = new THREE.CatmullRomCurve3(points);
-  const mesh = new THREE.Mesh(new THREE.TubeGeometry(curve, 160, element.tube, 12, false), material);
-  return register(mesh, element);
+  return group;
+}
+
+function buildOpenChannel(element, material) {
+  const group = new THREE.Group();
+  const thickness = element.profile.displayThickness;
+  const width = element.profile.base;
+  const sideHeight = element.profile.sideHeight;
+  const bottom = new THREE.Mesh(new THREE.BoxGeometry(element.length, thickness, width), material);
+  bottom.position.y = thickness / 2;
+  group.add(bottom);
+  for (const side of [-1, 1]) {
+    const wall = new THREE.Mesh(new THREE.BoxGeometry(element.length, sideHeight, thickness), material);
+    wall.position.set(0, sideHeight / 2, side * (width / 2 - thickness / 2));
+    group.add(wall);
+  }
+  return registerComposite(group, element);
+}
+
+function buildOpenChannelHelix(element, material) {
+  const group = new THREE.Group();
+  const segments = 88;
+  const thickness = element.profile.displayThickness;
+  const width = element.profile.base;
+  const sideHeight = element.profile.sideHeight;
+  for (let i = 0; i < segments; i += 1) {
+    const pointAt = (index) => {
+      const t = index / segments;
+      const angle = t * Math.PI * 2 * element.turns;
+      return new THREE.Vector3(Math.cos(angle) * element.radius, element.height * (1 - t), Math.sin(angle) * element.radius);
+    };
+    const start = pointAt(i);
+    const end = pointAt(i + 1);
+    const midpoint = start.clone().lerp(end, 0.5);
+    const direction = end.clone().sub(start);
+    const segment = new THREE.Group();
+    segment.position.copy(midpoint);
+    segment.quaternion.setFromUnitVectors(new THREE.Vector3(1, 0, 0), direction.clone().normalize());
+    const length = direction.length() * 1.05;
+    const bottom = new THREE.Mesh(new THREE.BoxGeometry(length, thickness, width), material);
+    const leftWall = new THREE.Mesh(new THREE.BoxGeometry(length, sideHeight, thickness), material);
+    const rightWall = leftWall.clone();
+    bottom.position.y = thickness / 2;
+    leftWall.position.set(0, sideHeight / 2, -(width / 2 - thickness / 2));
+    rightWall.position.set(0, sideHeight / 2, width / 2 - thickness / 2);
+    segment.add(bottom, leftWall, rightWall);
+    group.add(segment);
+  }
+  return registerComposite(group, element);
+}
+
+function buildStack(element, material) {
+  const group = new THREE.Group();
+  const [length, thickness, width] = element.sheetSize;
+  for (let i = 0; i < element.quantity; i += 1) {
+    const sheet = new THREE.Mesh(new THREE.BoxGeometry(length, thickness, width), material);
+    sheet.position.y = i * (thickness + 0.35);
+    group.add(sheet);
+  }
+  return registerComposite(group, element);
+}
+
+function buildPoolOutline(element, material) {
+  const group = new THREE.Group();
+  const [width, displayHeight, depth] = element.size;
+  const water = new THREE.Mesh(new THREE.BoxGeometry(width - 1.4, displayHeight / 2, depth - 1.4), material);
+  water.position.y = displayHeight / 4;
+  group.add(water);
+  const rimMaterial = material.clone();
+  rimMaterial.opacity = 0.9;
+  for (const z of [-depth / 2, depth / 2]) {
+    const rim = new THREE.Mesh(new THREE.BoxGeometry(width, displayHeight, 0.8), rimMaterial);
+    rim.position.set(0, displayHeight / 2, z);
+    group.add(rim);
+  }
+  for (const x of [-width / 2, width / 2]) {
+    const rim = new THREE.Mesh(new THREE.BoxGeometry(0.8, displayHeight, depth), rimMaterial);
+    rim.position.set(x, displayHeight / 2, 0);
+    group.add(rim);
+  }
+  return registerComposite(group, element);
+}
+
+function buildMarker(element, material) {
+  const group = new THREE.Group();
+  const marker = new THREE.Mesh(new THREE.OctahedronGeometry(4.5), material);
+  const label = makeLabel(element.name, "#9b6321");
+  label.position.y = 8;
+  group.add(marker, label);
+  return registerComposite(group, element);
 }
 
 function buildStairs(element, material) {
@@ -230,7 +327,11 @@ function populate(data) {
   for (const element of data.elements) {
     const material = materials[element.material];
     let object;
-    if (element.type === "helix") object = buildHelix(element, material);
+    if (element.type === "openChannel") object = buildOpenChannel(element, material);
+    else if (element.type === "openChannelHelix") object = buildOpenChannelHelix(element, material);
+    else if (element.type === "stack") object = buildStack(element, material);
+    else if (element.type === "poolOutline") object = buildPoolOutline(element, material);
+    else if (element.type === "marker") object = buildMarker(element, material);
     else if (element.type === "stairs") object = buildStairs(element, material);
     else object = register(new THREE.Mesh(geometryFor(element), material), element);
     const parent = element.assembly
@@ -241,9 +342,14 @@ function populate(data) {
 
   for (const dimension of data.dimensions) groups.dimensions.add(buildDimension(dimension));
   groups.future.visible = data.defaultVisibility.future;
+  groups.available.visible = data.defaultVisibility.available;
   groups.structure.visible = data.defaultVisibility.structure;
   groups.furniture.visible = data.defaultVisibility.furniture;
   groups.dimensions.visible = data.defaultVisibility.dimensions;
+  if (requestedLayers.has("future")) groups.future.visible = true;
+  if (requestedLayers.has("available")) groups.available.visible = true;
+  document.querySelector("#toggle-future").checked = groups.future.visible;
+  document.querySelector("#toggle-available").checked = groups.available.visible;
   createLevelControls(data);
   setView(activeView, false);
 }
@@ -284,6 +390,7 @@ function setView(viewName, animate = true) {
 
   document.querySelector("#view-front").classList.toggle("active", viewName === "frontPerspective");
   document.querySelector("#view-top").classList.toggle("active", viewName === "topPlan");
+  document.querySelector("#view-materials").classList.toggle("active", viewName === "materialsOverview");
 
   if (!animate) {
     camera.position.copy(nextPosition);
@@ -344,10 +451,16 @@ function updateTooltip(event) {
 
 document.querySelector("#toggle-structure").addEventListener("change", (event) => { groups.structure.visible = event.target.checked; });
 document.querySelector("#toggle-furniture").addEventListener("change", (event) => { groups.furniture.visible = event.target.checked; });
+document.querySelector("#toggle-available").addEventListener("change", (event) => { groups.available.visible = event.target.checked; });
 document.querySelector("#toggle-dimensions").addEventListener("change", updateDimensionVisibility);
 document.querySelector("#toggle-future").addEventListener("change", (event) => { groups.future.visible = event.target.checked; });
 document.querySelector("#view-front").addEventListener("click", () => setView("frontPerspective"));
 document.querySelector("#view-top").addEventListener("click", () => setView("topPlan"));
+document.querySelector("#view-materials").addEventListener("click", () => {
+  groups.available.visible = true;
+  document.querySelector("#toggle-available").checked = true;
+  setView("materialsOverview");
+});
 document.querySelector("#reset-view").addEventListener("click", () => setView(activeView));
 renderer.domElement.addEventListener("pointermove", updateTooltip);
 renderer.domElement.addEventListener("pointerleave", () => { tooltip.hidden = true; });

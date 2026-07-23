@@ -120,6 +120,7 @@ legend { width: 100%; margin-bottom: 10px; color: var(--muted); font-size: 10px;
 .switch-row input:checked + i { background: var(--violet); }
 .switch-row input:checked + i::after { transform: translateX(14px); }
 .future-row input:checked + i { background: var(--amber); }
+.available-row input:checked + i { background: #b5793d; }
 
 .warning-card {
   display: flex;
@@ -252,6 +253,13 @@ legend { width: 100%; margin-bottom: 10px; color: var(--muted); font-size: 10px;
 .future-list ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
 .future-list li { display: flex; align-items: center; gap: 9px; padding: 7px 9px; border-radius: 9px; background: #f8f4ef; color: #5e5361; font-size: 10px; font-weight: 600; }
 .future-list li span { color: #b18135; font-size: 8px; }
+
+.layer-legend { display: flex; flex-wrap: wrap; gap: 7px 12px; margin-top: 18px; padding-top: 15px; border-top: 1px solid var(--line); }
+.layer-legend span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 9px; font-weight: 700; }
+.layer-legend span::before { content: ""; width: 8px; height: 8px; border-radius: 50%; }
+.built-dot::before { background: var(--violet); }
+.available-dot::before { background: #c79158; }
+.future-dot::before { background: var(--amber); }
 
 @media (max-width: 1100px) {
   .workspace { height: auto; grid-template-columns: 225px minmax(500px, 1fr); }

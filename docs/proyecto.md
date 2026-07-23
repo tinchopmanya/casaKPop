@@ -18,6 +18,8 @@ Primera digitalización registrada el 18 de julio de 2026 a partir de dos fotogr
 
 El modelo 3D inicial representa esta organización sin rediseñarla. Las ampliaciones opcionales están separadas en una capa futura y se muestran apagadas por defecto.
 
+Desde el 22 de julio de 2026 el visor distingue tres estados: estructura actual, materiales disponibles todavía sin instalar e ideas futuras conceptuales. La base construida se registra con 3 mm de espesor. Ningún material inventariado se considera agregado a la casa.
+
 ## Cronología
 
 ### 2026-07-18 — Inicio del plano maestro
@@ -34,6 +36,15 @@ El modelo 3D inicial representa esta organización sin rediseñarla. Las ampliac
 - Se corrigió la alineación posterior de las cajas y se agregaron las dos aberturas faltantes en la pared lateral violeta.
 - Se registraron cuatro ideas futuras no invasivas.
 
+### 2026-07-22 — Inventario y programa de crecimiento
+
+- Se incorporaron todas las placas MDF, las dos tapas resistentes, las dos canaletas PVC abiertas, la cuerda, las luces, los muebles armados, el pasto artificial y las tablas aún sin medir.
+- Se corrigió el espesor informado de la base a 3 mm, conservando el valor anterior como antecedente.
+- Se creó `ideas.md` como registro separado de propuestas futuras.
+- Se priorizó la piscina con zona exterior y se registraron dos módulos laterales MDF estructuralmente independientes.
+- El tobogán conceptual pasó de tubo a canaleta abierta en U.
+- El visor separa estructura construida, material disponible y ampliaciones futuras.
+
 ## Ideas futuras
 
 - Ascensor manual con polea y cuerda, preferentemente adosado al núcleo o lateral derecho.
@@ -41,6 +52,11 @@ El modelo 3D inicial representa esta organización sin rediseñarla. Las ampliac
 - Escaleras internas compactas entre niveles.
 - Iluminación LED cálida, de bajo voltaje, con canaletas registrables.
 - Refuerzo progresivo con MDF fino o listones donde el cartón reciba cargas repetidas.
+- Piscina plástica de aproximadamente 30 × 20 cm con patio de pasto artificial, prioridad alta.
+- Dos muebles laterales MDF independientes, uno por lado.
+- Terrazas, balcones, habitaciones, garaje, jardines y módulos desmontables.
+
+El registro completo y su prioridad se mantiene en `ideas.md`.
 
 ## Decisiones tomadas
 
@@ -63,6 +79,8 @@ El modelo 3D inicial representa esta organización sin rediseñarla. Las ampliac
 1. Medir el voladizo frontal y posterior de la torre azul respecto de la base.
 2. Medir ancho, profundidad y posición de cada puente de cartón.
 3. Medir alturas de cada piso desde la cara superior de la base.
-4. Confirmar espesor del MDF y del cartón.
+4. Medir el espesor de las paredes de cartón y del PVC; el espesor de la base ya fue informado como 3 mm.
 5. Fotografiar frente, laterales, parte trasera y vista superior con una cinta métrica visible.
 6. Elegir el primer refuerzo estructural antes de agregar mecanismos.
+7. Medir el área exterior disponible para piscina y módulos laterales.
+8. Inventariar con foto y medidas cada mueble MDF armado y las tablas grandes.

@@ -13,4 +13,7 @@ En cada actualización:
 7. Mantener las ampliaciones conceptuales separadas de lo construido.
 8. No inventar dimensiones; marcar como estimado cualquier valor deducido de imágenes.
 9. Priorizar refuerzo y reutilización de lo existente antes de cambios importantes.
-
+10. Mantener `ideas.md` como banco de propuestas sin confundirlas con tareas aprobadas o piezas construidas.
+11. Separar siempre los estados `built`, `available` y `future` en el JSON y el visor.
+12. Modelar las canaletas del tobogán como perfiles U abiertos; no inventar espesor ni radio de curvatura.
+13. Preservar enteras las tapas originales de cartón salvo decisión explícita posterior.

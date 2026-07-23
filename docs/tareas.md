@@ -14,7 +14,12 @@
 - [ ] Evaluar ubicación y recorrido de escaleras sin perder demasiado espacio útil.
 - [ ] Diseñar circuito LED de baja tensión y canaletas accesibles.
 - [ ] Evaluar un tobogán exterior desmontable.
-- [ ] Completar inventario con cantidades y materiales exactos.
+- [ ] Medir el espesor real del PVC y confirmar si los 6 cm son interiores o exteriores.
+- [ ] Medir y fotografiar el pasto artificial restante, los muebles MDF armados y las tablas grandes.
+- [ ] Medir el espacio exterior disponible para piscina y módulos laterales.
+- [ ] Buscar una piscina plástica accesible de aproximadamente 30 × 20 cm antes de decidir fabricación.
+- [ ] Diseñar apoyos desmontables para el tobogán sin cortar las canaletas.
+- [ ] Evaluar usos enteros para las dos tapas de cartón de 116 × 38 cm.
 
 ## En progreso
 
@@ -33,3 +38,7 @@
 - [x] Corregir el sentido del giro azul y cerrar la pared que recibe los puentes.
 - [x] Alinear ambas cajas por la cara posterior contra la pared.
 - [x] Agregar aberturas de puente en la pared lateral violeta.
+- [x] Completar el inventario informado de MDF, cartón grueso, canaletas, cuerda, LED y herramientas.
+- [x] Crear `ideas.md` y separar ideas futuras del estado construido.
+- [x] Diferenciar en el visor estructura actual, material disponible y futuro conceptual.
+- [x] Corregir el espesor de la base a 3 mm y el tobogán a perfil abierto.

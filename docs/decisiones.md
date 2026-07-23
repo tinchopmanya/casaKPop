@@ -60,3 +60,43 @@
 - **Decisión:** Alinear las caras posteriores de las dos cajas en Z = −30 cm, no sus frentes. Reconstruir la pared lateral derecha de la torre violeta con dos aberturas pequeñas alineadas con los puentes.
 - **Motivo:** Ambas cajas apoyan contra la misma pared posterior. La diferencia de profundidad debe verse hacia el frente y los puentes atraviesan huecos en las dos cajas.
 - **Consecuencia:** El centro de la torre violeta pasa de Z = 10 a Z = −11 cm. Su frente queda en Z = 8 cm y el frente azul en Z = 30 cm, generando un saliente de 22 cm. Cada pared de conexión se divide en cinco paños alrededor de dos aberturas provisionales.
+
+## D-009 — Tres estados claramente separados
+
+- **Fecha:** 2026-07-22
+- **Estado:** Activa
+- **Decisión:** Separar en el JSON y el visor la estructura construida, los materiales disponibles sin instalar y las ampliaciones futuras.
+- **Motivo:** Evitar que una pieza de inventario o una idea se confunda con la casa real.
+- **Consecuencia:** Las capas `available` y `future` están apagadas por defecto y tienen controles independientes.
+
+## D-010 — Canaletas abiertas para el tobogán
+
+- **Fecha:** 2026-07-22
+- **Estado:** Confirmada por el usuario
+- **Decisión:** Representar las dos canaletas como perfiles U abiertos, con base y laterales de 6 cm; nunca como tubos cerrados.
+- **Motivo:** Corresponde al material disponible real.
+- **Consecuencia:** El recorrido del tobogán sigue siendo conceptual. El espesor visual del visor no se considera una medida física.
+
+## D-011 — Conservar enteras las tapas resistentes
+
+- **Fecha:** 2026-07-22
+- **Estado:** Activa
+- **Decisión:** Priorizar usos que aprovechen completas las dos tapas de cartón de 116 × 38 × 3 cm aproximadamente.
+- **Motivo:** Son piezas grandes, resistentes y difíciles de reemplazar.
+- **Consecuencia:** No se asignan cortes hasta aprobar una solución que realmente los necesite.
+
+## D-012 — Piscina prioritaria y módulos laterales independientes
+
+- **Fecha:** 2026-07-22
+- **Estado:** Conceptual
+- **Decisión:** Dar prioridad alta a una piscina plástica de aproximadamente 30 × 20 cm con patio de pasto artificial. Modelar dos muebles laterales MDF como marcadores sin dimensiones y estructuralmente independientes.
+- **Motivo:** Permite ampliar el proyecto sin transferir cargas nuevas a las cajas de cartón.
+- **Consecuencia:** La piscina y los módulos se muestran solo en la capa futura; la compra y las dimensiones finales quedan pendientes.
+
+## D-013 — Corrección del espesor de la base
+
+- **Fecha:** 2026-07-22
+- **Estado:** Activa
+- **Decisión:** Registrar la base existente como MDF de 119 × 58 × 0,3 cm.
+- **Motivo:** Nueva medida informada por el usuario.
+- **Consecuencia:** El valor anterior de 1,5 cm se conserva como antecedente superado y la geometría visible usa 3 mm.

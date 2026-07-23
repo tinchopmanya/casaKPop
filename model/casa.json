@@ -1,10 +1,10 @@
 {
-  "schemaVersion": "1.3.0",
+  "schemaVersion": "1.4.0",
   "project": {
     "name": "Casa de Muñecas Modular",
-    "updatedAt": "2026-07-18",
+    "updatedAt": "2026-07-22",
     "units": "cm",
-    "status": "implantacion en L con fondos alineados y aberturas de puente en ambas torres",
+    "status": "estructura construida preservada; inventario y alternativas separados por capas",
     "principle": "Preservar y reutilizar la estructura artesanal existente antes de modificarla."
   },
   "coordinateSystem": {
@@ -31,10 +31,21 @@
     {"id": "M-006", "target": "nucleo-central", "axis": "x", "value": 21, "certainty": "informada-no-verificada", "source": ["S-003", "consigna"]},
     {"id": "M-007", "target": "base-mdf", "axis": "x", "value": 119, "certainty": "informada-consistente-con-giro", "source": ["S-003", "consigna"]},
     {"id": "M-008", "target": "base-mdf", "axis": "z", "value": 58, "certainty": "informada-no-verificada", "source": ["S-003"]},
-    {"id": "M-009", "target": "base-mdf", "axis": "y", "value": 1.5, "certainty": "informada-no-verificada", "source": ["S-003"]},
+    {"id": "M-009", "target": "base-mdf", "axis": "y", "value": 1.5, "certainty": "superada-por-medida-posterior", "source": ["S-003"]},
     {"id": "M-010", "target": "torre-derecha", "axis": "rotacion-y", "value": -90, "certainty": "superada-por-correccion-posterior", "source": ["S-004", "mensaje-2026-07-18"]},
     {"id": "M-011", "target": "torre-derecha", "axis": "rotacion-y", "value": 90, "certainty": "confirmada-por-usuario", "source": ["S-005", "S-006", "mensaje-2026-07-18"]},
-    {"id": "M-012", "target": "ambas-torres", "axis": "z-posterior", "value": -30, "certainty": "alineacion-confirmada-por-usuario", "source": ["mensaje-2026-07-18"]}
+    {"id": "M-012", "target": "ambas-torres", "axis": "z-posterior", "value": -30, "certainty": "alineacion-confirmada-por-usuario", "source": ["mensaje-2026-07-18"]},
+    {"id": "M-018", "target": "base-mdf", "axis": "y", "value": 0.3, "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-019", "target": "canaleta-pvc-1", "axis": "largo", "value": 190, "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-020", "target": "canaleta-pvc-2", "axis": "largo", "value": 60, "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-021", "target": "canaletas-pvc", "axis": "base", "value": 6, "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-022", "target": "canaletas-pvc", "axis": "altura-lateral", "value": 6, "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-023", "target": "mdf-15-grupo-a", "axis": "cantidad-largo-ancho-espesor", "value": [2, 166, 30, 1.5], "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-024", "target": "mdf-15-grupo-b", "axis": "cantidad-largo-ancho-espesor", "value": [2, 177, 30, 1.5], "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-025", "target": "mdf-13", "axis": "cantidad-largo-ancho-espesor", "value": [6, 50.3, 30, 1.3], "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-026", "target": "mdf-fino-grupo-a", "axis": "cantidad-largo-ancho-espesor", "value": [2, 61, 30, 0.3], "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-027", "target": "mdf-fino-grupo-b", "axis": "cantidad-largo-ancho-espesor", "value": [1, 44, 15, 0.3], "certainty": "informada-por-usuario", "source": ["mensaje-2026-07-22"]},
+    {"id": "M-028", "target": "tapas-carton", "axis": "cantidad-largo-ancho-espesor", "value": [2, 116, 38, 3], "certainty": "espesor-aproximado", "source": ["mensaje-2026-07-22"]}
   ],
   "modelAssumptions": {
     "footprint": {
@@ -71,14 +82,35 @@
     "grass": {"label": "Cesped decorativo", "color": "#2c6a45", "roughness": 1, "metalness": 0},
     "transparent": {"label": "Lamina transparente", "color": "#bfe9f4", "roughness": 0.18, "metalness": 0, "opacity": 0.28},
     "future": {"label": "Ampliacion futura", "color": "#ffb454", "roughness": 0.45, "metalness": 0.08, "opacity": 0.52},
-    "led": {"label": "LED calido", "color": "#fff0b0", "emissive": "#ffb21a", "emissiveIntensity": 2.2, "roughness": 0.25, "metalness": 0}
+    "led": {"label": "LED calido", "color": "#fff0b0", "emissive": "#ffb21a", "emissiveIntensity": 2.2, "roughness": 0.25, "metalness": 0},
+    "availableMdf": {"label": "MDF disponible", "color": "#c79158", "roughness": 0.9, "metalness": 0, "opacity": 0.78},
+    "availableCardboard": {"label": "Carton grueso disponible", "color": "#ad744d", "roughness": 1, "metalness": 0, "opacity": 0.78},
+    "availablePvc": {"label": "Canaleta PVC abierta disponible", "color": "#e7ecef", "roughness": 0.55, "metalness": 0, "opacity": 0.9},
+    "poolConcept": {"label": "Piscina conceptual", "color": "#41bddd", "roughness": 0.35, "metalness": 0, "opacity": 0.58},
+    "grassConcept": {"label": "Patio de pasto conceptual", "color": "#69a86f", "roughness": 1, "metalness": 0, "opacity": 0.5}
+  },
+  "inventory": {
+    "status": "disponible-no-incorporado-a-la-estructura",
+    "materials": [
+      {"id": "canaleta-pvc-1", "name": "Canaleta PVC abierta 1", "quantity": 1, "dimensions": {"length": 190, "base": 6, "sideHeight": 6, "profile": "U-abierto"}, "intendedUse": "tobogan-exterior"},
+      {"id": "canaleta-pvc-2", "name": "Canaleta PVC abierta 2", "quantity": 1, "dimensions": {"length": 60, "base": 6, "sideHeight": 6, "profile": "U-abierto"}, "intendedUse": "tobogan-exterior"},
+      {"id": "mdf-15-30x166", "name": "Placa MDF", "quantity": 2, "dimensions": {"length": 166, "width": 30, "thickness": 1.5}},
+      {"id": "mdf-15-30x177", "name": "Placa MDF", "quantity": 2, "dimensions": {"length": 177, "width": 30, "thickness": 1.5}},
+      {"id": "mdf-13-30x50-3", "name": "Placa MDF", "quantity": 6, "dimensions": {"length": 50.3, "width": 30, "thickness": 1.3}},
+      {"id": "mdf-3-30x61", "name": "Placa MDF fino", "quantity": 2, "dimensions": {"length": 61, "width": 30, "thickness": 0.3}},
+      {"id": "mdf-3-15x44", "name": "Placa MDF fino", "quantity": 1, "dimensions": {"length": 44, "width": 15, "thickness": 0.3}},
+      {"id": "tapas-carton", "name": "Tapas originales de carton grueso", "quantity": 2, "dimensions": {"length": 116, "width": 38, "thickness": 3, "certainty": "espesor-aproximado"}, "constraint": "reutilizar-enteras-y-evitar-cortes"},
+      {"id": "pasto-artificial", "name": "Pasto artificial", "quantity": null, "dimensions": null},
+      {"id": "tablas-grandes", "name": "Otras tablas grandes", "quantity": null, "dimensions": null}
+    ],
+    "toolsAndSupplies": ["caladora", "trinchetas", "silicona-caliente", "pistola-de-silicona", "cuerda", "luces-led", "muebles-mdf-armados", "pinturas", "carton-adicional"]
   },
   "components": [
     {
       "id": "base-mdf",
       "kind": "base",
       "status": "construido",
-      "dimensions": {"x": 119, "y": 1.5, "z": 58, "certainty": "informada-no-verificada"},
+      "dimensions": {"x": 119, "y": 0.3, "z": 58, "certainty": "informada-por-usuario"},
       "material": "mdf"
     },
     {
@@ -127,7 +159,7 @@
     }
   ],
   "elements": [
-    {"id": "base", "name": "Base MDF", "type": "box", "group": "structure", "level": "base", "status": "built", "position": [0, -0.75, 0], "size": [119, 1.5, 58], "material": "mdf"},
+    {"id": "base", "name": "Base MDF", "type": "box", "group": "structure", "level": "base", "status": "built", "position": [0, -0.15, 0], "size": [119, 0.3, 58], "material": "mdf"},
 
     {"id": "li-back", "name": "Fondo torre violeta", "type": "box", "group": "structure", "assembly": "left-tower", "level": "all", "status": "built", "position": [0, 56.5, -18.5], "size": [60, 113, 1], "material": "violetDark"},
     {"id": "li-side-l", "name": "Lateral exterior violeta", "type": "box", "group": "structure", "assembly": "left-tower", "level": "all", "status": "built", "position": [-29.5, 56.5, 0], "size": [1, 113, 38], "material": "violet"},
@@ -181,10 +213,23 @@
     {"id": "future-elevator-guide-l", "name": "Guia ascensor izquierda", "type": "box", "group": "future", "level": "all", "status": "future", "position": [4, 57, 15], "size": [1, 108, 1], "material": "future"},
     {"id": "future-elevator-guide-r", "name": "Guia ascensor derecha", "type": "box", "group": "future", "level": "all", "status": "future", "position": [18, 57, 15], "size": [1, 108, 1], "material": "future"},
     {"id": "future-elevator-pulley", "name": "Polea ascensor", "type": "cylinder", "group": "future", "level": "nivel-3", "status": "future", "position": [11, 108, 15], "radius": 3, "height": 2, "rotation": [0, 0, 1.5708], "material": "future"},
-    {"id": "future-slide", "name": "Tobogan exterior helicoidal", "type": "helix", "group": "future", "level": "all", "status": "future", "position": [66, 0, -9], "radius": 8, "tube": 2.2, "height": 95, "turns": 2.4, "material": "future"},
+    {"id": "future-slide", "name": "Tobogan exterior con canaleta abierta", "type": "openChannelHelix", "group": "future", "level": "all", "status": "future", "position": [66, 2, -9], "radius": 9, "height": 92, "turns": 2.15, "profile": {"base": 6, "sideHeight": 6, "displayThickness": 0.35}, "availableLengths": [190, 60], "pathDimensions": "conceptuales-no-constructivas", "material": "future"},
     {"id": "future-stairs", "name": "Escalera interior", "type": "stairs", "group": "future", "assembly": "right-tower", "level": "all", "status": "future", "position": [0, 3, 6], "steps": 11, "stepSize": [3.2, 2.8, 5], "riseDirection": [0, 1, -1], "material": "future"},
     {"id": "future-led-left", "name": "LED torre violeta", "type": "box", "group": "future", "assembly": "left-tower", "level": "nivel-3", "status": "future", "position": [0, 108, 17.8], "size": [54, 0.7, 0.7], "material": "led"},
-    {"id": "future-led-right", "name": "LED torre azul", "type": "box", "group": "future", "assembly": "right-tower", "level": "nivel-3", "status": "future", "position": [0, 108, 17.8], "size": [54, 0.7, 0.7], "material": "led"}
+    {"id": "future-led-right", "name": "LED torre azul", "type": "box", "group": "future", "assembly": "right-tower", "level": "nivel-3", "status": "future", "position": [0, 108, 17.8], "size": [54, 0.7, 0.7], "material": "led"},
+    {"id": "future-pool", "name": "Piscina plastica para muñecas", "type": "poolOutline", "group": "future", "level": "base", "status": "future", "priority": "alta", "position": [-23, 0.3, 46], "size": [30, 0.8, 20], "knownPlanDimensions": [30, 20], "heightCertainty": "solo-representacion-visual", "material": "poolConcept"},
+    {"id": "future-pool-garden", "name": "Patio o jardin asociado a piscina", "type": "box", "group": "future", "level": "base", "status": "future", "position": [-23, 0.15, 46], "size": [38, 0.2, 27], "dimensions": "conceptuales", "material": "grassConcept"},
+    {"id": "future-side-module-left", "name": "Modulo lateral MDF izquierdo independiente", "type": "marker", "group": "future", "level": "all", "status": "future", "position": [-77, 28, -8], "dimensioned": false, "material": "future"},
+    {"id": "future-side-module-right", "name": "Modulo lateral MDF derecho independiente", "type": "marker", "group": "future", "level": "all", "status": "future", "position": [76, 28, -8], "dimensioned": false, "material": "future"},
+
+    {"id": "available-gutter-190", "name": "Canaleta PVC abierta · 190 cm", "type": "openChannel", "group": "available", "level": "all", "status": "available", "position": [0, 8, -88], "length": 190, "profile": {"base": 6, "sideHeight": 6, "displayThickness": 0.35}, "material": "availablePvc"},
+    {"id": "available-gutter-60", "name": "Canaleta PVC abierta · 60 cm", "type": "openChannel", "group": "available", "level": "all", "status": "available", "position": [0, 18, -88], "length": 60, "profile": {"base": 6, "sideHeight": 6, "displayThickness": 0.35}, "material": "availablePvc"},
+    {"id": "available-mdf-166", "name": "2 placas MDF 30 × 166 × 1,5 cm", "type": "stack", "group": "available", "level": "all", "status": "available", "position": [-10, 2, -125], "sheetSize": [166, 1.5, 30], "quantity": 2, "material": "availableMdf"},
+    {"id": "available-mdf-177", "name": "2 placas MDF 30 × 177 × 1,5 cm", "type": "stack", "group": "available", "level": "all", "status": "available", "position": [-5, 8, -158], "sheetSize": [177, 1.5, 30], "quantity": 2, "material": "availableMdf"},
+    {"id": "available-mdf-50", "name": "6 placas MDF 30 × 50,3 × 1,3 cm", "type": "stack", "group": "available", "level": "all", "status": "available", "position": [-55, 4, -192], "sheetSize": [50.3, 1.3, 30], "quantity": 6, "material": "availableMdf"},
+    {"id": "available-mdf-thin-61", "name": "2 placas MDF fino 30 × 61 × 0,3 cm", "type": "stack", "group": "available", "level": "all", "status": "available", "position": [5, 3, -192], "sheetSize": [61, 0.3, 30], "quantity": 2, "material": "availableMdf"},
+    {"id": "available-mdf-thin-44", "name": "1 placa MDF fino 15 × 44 × 0,3 cm", "type": "stack", "group": "available", "level": "all", "status": "available", "position": [62, 3, -192], "sheetSize": [44, 0.3, 15], "quantity": 1, "material": "availableMdf"},
+    {"id": "available-cardboard-lids", "name": "2 tapas de carton grueso · conservar enteras", "type": "stack", "group": "available", "level": "all", "status": "available", "position": [0, 4, -225], "sheetSize": [116, 3, 38], "quantity": 2, "material": "availableCardboard"}
   ],
   "dimensions": [
     {"id": "dim-base-width", "label": "119 cm base MDF", "start": [-59.5, -3, 31], "end": [59.5, -3, 31], "status": "reported", "views": ["frontPerspective", "topPlan"]},
@@ -196,12 +241,14 @@
   ],
   "views": {
     "frontPerspective": {"label": "Frente en perspectiva", "camera": [85, 100, 235], "target": [0, 52, 5]},
-    "topPlan": {"label": "Vista superior (plano)", "camera": [0, 310, 0.01], "target": [0, 48, 0]}
+    "topPlan": {"label": "Vista superior (plano)", "camera": [0, 310, 0.01], "target": [0, 48, 0]},
+    "materialsOverview": {"label": "Inventario disponible", "camera": [0, 225, -325], "target": [0, 18, -150]}
   },
   "defaultVisibility": {
     "structure": true,
     "furniture": true,
     "future": false,
+    "available": false,
     "dimensions": true,
     "levels": {"base": true, "nivel-1": true, "nivel-2": true, "nivel-3": true, "all": true}
   }

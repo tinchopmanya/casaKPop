@@ -21,7 +21,8 @@ Controles disponibles:
 - Rotar, acercar y desplazar la cámara.
 - Cambiar entre perspectiva frontal y vista superior tipo plano.
 - Activar o desactivar cada nivel.
-- Mostrar medidas, estructura, muebles y ampliaciones futuras.
+- Mostrar medidas, estructura, muebles, material disponible y ampliaciones futuras.
+- Abrir una vista de inventario para revisar las placas, tapas y canaletas sin confundirlas con lo construido.
 - Restablecer la vista.
 
 ## Vistas verificadas
@@ -37,8 +38,9 @@ Controles disponibles:
 - Ambas torres se alinean por la cara posterior que apoya contra la pared; por eso la torre azul sobresale aproximadamente 22 cm hacia el frente.
 - La pared lateral derecha de la torre violeta también permanece cerrada salvo por dos aberturas pequeñas para los puentes.
 - Núcleo central rosado unido mediante puentes de cartón.
-- Base de MDF.
-- Ascensor manual, tobogán exterior, escaleras y luces LED registrados como ideas futuras opcionales, apagadas por defecto.
+- Base de MDF de 119 × 58 × 0,3 cm.
+- Piscina, módulos laterales, ascensor manual, tobogán exterior, escaleras y luces LED registrados como ideas futuras opcionales, apagadas por defecto.
+- El tobogán se representa mediante canaletas abiertas en U, no como tubo cerrado.
 
 ## Precisión dimensional
 
@@ -47,6 +49,7 @@ Las medidas originales se preservan en `docs/medidas.md` y `model/casa.json`. La
 ## Estructura
 
 - `docs/`: documentación viva, decisiones, medidas, materiales y tareas.
+- `ideas.md`: banco de ideas futuras, con prioridad y restricciones, separado del estado actual.
 - `model/`: geometría estructurada e historial de cambios.
 - `viewer/`: visor 3D Three.js impulsado únicamente por `casa.json`.
 - `assets/photos/`: fotografías originales numeradas, nunca reemplazadas.

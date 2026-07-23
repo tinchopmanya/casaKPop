@@ -3,6 +3,30 @@
   "project": "Casa de Muñecas Modular",
   "changes": [
     {
+      "date": "2026-07-22",
+      "description": "Se actualizó integralmente el plano maestro sin modificar la estructura construida. Se corrigió la base a 3 mm, se inventariaron MDF, tapas, canaletas abiertas, cuerda, LED, muebles, pasto y tablas pendientes; se creó ideas.md; y el visor separa construido, disponible y futuro. La piscina tiene prioridad alta, los módulos laterales son independientes y el tobogán se representa como canaleta U abierta.",
+      "filesModified": [
+        "README.md",
+        "ideas.md",
+        "docs/proyecto.md",
+        "docs/decisiones.md",
+        "docs/materiales.md",
+        "docs/medidas.md",
+        "docs/tareas.md",
+        "model/casa.json",
+        "model/historial.json",
+        "viewer/index.html",
+        "viewer/app.js",
+        "viewer/style.css",
+        "assets/renders/README.md",
+        "assets/renders/modelo-3d-frente.png",
+        "assets/renders/modelo-3d-superior.png",
+        "assets/renders/modelo-3d-materiales.png",
+        "assets/renders/modelo-3d-futuro.png",
+        "prompts/modelo-maestro.md"
+      ]
+    },
+    {
       "date": "2026-07-18",
       "description": "Se corrigió la alineación en planta: ambas cajas ahora coinciden por la cara posterior contra la pared, dejando la torre azul 22 cm adelantada. La pared lateral violeta se reconstruyó cerrada con dos aberturas pequeñas alineadas con los puentes, equivalentes a las de la torre azul.",
       "filesModified": [
